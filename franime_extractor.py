@@ -3,13 +3,36 @@ Extracteur franime.fr — supporte SIBNET, FILEMOON, SENDVID, VIDMOLY et HLS dir
 Lance Chrome en arrière-plan par défaut, intercepte les URLs des lecteurs, essaie chaque lecteur dans l'ordre.
 """
 from __future__ import annotations
-import re, os, shutil, tempfile
+import re, os, shutil, tempfile, time, random, sys
 from pathlib import Path
 from typing import Any
 
-from config import BROWSER_HEADLESS
+from config import BROWSER_HEADLESS, BROWSER_PROFILE_DIR, PROXIES
 
 FRANIME_PATTERN = re.compile(r"https?://(?:www\.)?franime\.fr/", re.IGNORECASE)
+
+# ── Anti-Bot Settings ────────────────────────────────────────────────────────
+USER_AGENTS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+]
+
+def human_delay(min_ms=500, max_ms=1500):
+    """Pause aléatoire pour simuler un comportement humain."""
+    time.sleep(random.randint(min_ms, max_ms) / 1000.0)
+
+def move_mouse_humanly(page):
+    """Déplace la souris de manière moins linéaire."""
+    try:
+        width, height = 1280, 720
+        for _ in range(random.randint(2, 5)):
+            x, y = random.randint(0, width), random.randint(0, height)
+            page.mouse.move(x, y, steps=random.randint(5, 15))
+            human_delay(100, 300)
+    except:
+        pass
 
 # ── Lecteurs connus et leurs patterns d'URL ──────────────────────────────────
 # Chaque entrée : (nom, regex de détection, blacklist regex)
@@ -105,7 +128,17 @@ def _resolve_downloaded_file(info: dict[str, Any], output_path: str, before_mtim
     return candidates[0][1] if candidates else None
 
 
-def extract_stream_url(page_url: str, preferred_lecteur: str | None = None) -> tuple[str | None, str | None, dict[str, list[str]], dict[str, Any]]:
+def clear_terminal():
+    """Nettoie la console pour éviter la latence et les bugs d'affichage."""
+    if sys.platform == "win32":
+        os.system("cls")
+    else:
+        os.system("clear")
+    print("\n" + "=" * 60)
+    print("DowFlow — Console rafraîchie pour éviter la latence")
+    print("=" * 60 + "\n")
+
+def extract_stream_url(page_url: str, preferred_lecteur: str | None = None, proxy_url: str | None = None) -> tuple[str | None, str | None, dict[str, list[str]], dict[str, Any]]:
     """
     Retourne (url_stream, nom_lecteur, all_captured, diagnostics).
     """
@@ -121,6 +154,9 @@ def extract_stream_url(page_url: str, preferred_lecteur: str | None = None) -> t
         "blocked": False,
         "blocked_url": None,
     }
+
+    if proxy_url:
+        print(f"  [franime] Utilisation du proxy : {proxy_url.split('@')[-1]}")
 
     def on_request(req):
         url = req.url
@@ -150,9 +186,13 @@ def extract_stream_url(page_url: str, preferred_lecteur: str | None = None) -> t
 
     chrome_path   = _find_chrome()
     user_data_dir = _chrome_user_data_dir()
-    tmp_profile   = None
+    
+    # Utilisation du profil persistant du projet au lieu d'un temporaire
+    BROWSER_PROFILE_DIR.mkdir(parents=True, exist_ok=True)
+    profile_path = str(BROWSER_PROFILE_DIR)
 
     print(f"  [franime] Chrome : {chrome_path or 'Chromium Playwright'}")
+    print(f"  [franime] Profil : {profile_path}")
 
     with sync_playwright() as pw:
         # Arguments pour plus de discrétion (anti-bot)
@@ -161,44 +201,59 @@ def extract_stream_url(page_url: str, preferred_lecteur: str | None = None) -> t
             "--disable-blink-features=AutomationControlled",
             "--disable-infobars",
             "--disable-dev-shm-usage",
-            "--disable-gpu"
+            "--disable-gpu",
+            "--window-position=0,0",
         ]
 
-        # User-Agent réaliste
-        user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        # User-Agent aléatoire
+        user_agent = random.choice(USER_AGENTS)
+        # Viewport aléatoire
+        viewport_w = random.randint(1200, 1600)
+        viewport_h = random.randint(700, 1000)
 
-        if chrome_path and user_data_dir and os.path.isdir(os.path.join(user_data_dir, "Default")):
-            # ... (reste de la logique de copie inchangé)
-            tmp_profile = tempfile.mkdtemp(prefix="dowflow_")
-            dst_default = os.path.join(tmp_profile, "Default")
-            os.makedirs(dst_default, exist_ok=True)
+        # Proxy config for Playwright
+        proxy_config = None
+        if proxy_url:
+            proxy_config = {"server": proxy_url}
+
+        # Si Chrome est installé, on essaie de synchroniser les cookies initiaux une fois
+        if chrome_path and user_data_dir and not (BROWSER_PROFILE_DIR / "Default").exists():
+            print("  [franime] Synchronisation initiale du profil Chrome...")
             src_default = os.path.join(user_data_dir, "Default")
+            dst_default = BROWSER_PROFILE_DIR / "Default"
+            dst_default.mkdir(parents=True, exist_ok=True)
             for fname in ["Cookies", "Login Data", "Local State", "Preferences", "Web Data"]:
                 src = os.path.join(src_default, fname)
                 if os.path.isfile(src):
-                    try: shutil.copy2(src, os.path.join(dst_default, fname))
-                    except Exception: pass
-            ls = os.path.join(user_data_dir, "Local State")
-            if os.path.isfile(ls):
-                try: shutil.copy2(ls, os.path.join(tmp_profile, "Local State"))
-                except Exception: pass
-            
-            ctx = pw.chromium.launch_persistent_context(
-                tmp_profile, headless=BROWSER_HEADLESS, executable_path=chrome_path,
-                args=base_args, no_viewport=True, user_agent=user_agent,
-                locale="fr-FR")
-            page = ctx.new_page()
-        else:
-            browser = pw.chromium.launch(headless=BROWSER_HEADLESS, executable_path=chrome_path or None, args=base_args)
-            ctx = browser.new_context(
-                viewport={"width": 1280, "height": 720}, 
-                locale="fr-FR",
-                user_agent=user_agent
-            )
-            page = ctx.new_page()
+                    try: shutil.copy2(src, dst_default / fname)
+                    except: pass
+        
+        # Lancement avec contexte PERSISTANT (maintient les sessions/cookies Franime)
+        ctx = pw.chromium.launch_persistent_context(
+            profile_path, 
+            headless=BROWSER_HEADLESS, 
+            executable_path=chrome_path,
+            args=base_args, 
+            no_viewport=False, 
+            viewport={"width": viewport_w, "height": viewport_h},
+            user_agent=user_agent,
+            locale="fr-FR",
+            timezone_id="Europe/Paris",
+            proxy=proxy_config
+        )
+        page = ctx.new_page()
 
-        # Injection de script pour masquer Playwright
-        page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+        # Injection de script pour masquer Playwright et simuler des caractéristiques réelles
+        page.add_init_script("""
+            Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
+            Object.defineProperty(navigator, 'languages', {get: () => ['fr-FR', 'fr', 'en-US', 'en']});
+            Object.defineProperty(navigator, 'plugins', {get: () => [1, 2, 3, 4, 5]});
+            window.chrome = { runtime: {} };
+        """)
+
+        # --- PROTECTION LOCALE ---
+        # Petite pause aléatoire avant de charger la page
+        human_delay(2000, 6000)
 
         page.on("request",  on_request)
         page.on("response", on_response)
@@ -209,34 +264,46 @@ def extract_stream_url(page_url: str, preferred_lecteur: str | None = None) -> t
             print("  [franime] Timeout – on continue")
 
         # Détection Cloudflare
-        if "challenge-platform" in page.content() or "cloudflare" in page.content().lower() or "just a moment" in page.title().lower():
-            print("  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...")
+        content_lower = page.content().lower()
+        if "challenge-platform" in content_lower or "cloudflare" in content_lower or "just a moment" in page.title().lower():
+            print("  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 45s)...")
+            human_delay(4000, 6000)
             try:
                 # On essaie de cliquer sur la checkbox si elle apparaît (iframe Cloudflare)
-                for i in range(10): # Augmenté à 10 tentatives
-                    if "challenge-platform" not in page.content() and "cloudflare" not in page.content().lower() and "just a moment" not in page.title().lower():
+                for i in range(15): # Augmenté à 15 tentatives
+                    curr_content = page.content().lower()
+                    if "challenge-platform" not in curr_content and "cloudflare" not in curr_content and "just a moment" not in page.title().lower():
                         break
                     
-                    # On bouge la souris pour paraître humain
-                    page.mouse.move(100 + i*50, 100 + i*50)
+                    # On bouge la souris de manière aléatoire pour paraître humain
+                    move_mouse_humanly(page)
+                    
+                    # Petit scroll aléatoire
+                    if random.random() > 0.5:
+                        page.mouse.wheel(0, random.randint(100, 400))
                     
                     # On cherche l'iframe du challenge
                     frames = page.frames
                     for f in frames:
                         if "cloudflare" in f.url or "turnstile" in f.url:
                             try:
-                                checkbox = f.query_selector("input[type='checkbox'], #challenge-stage")
+                                checkbox = f.query_selector("input[type='checkbox'], #challenge-stage, .ctp-checkbox-container")
                                 if checkbox:
+                                    # On bouge d'abord sur l'élément avant de cliquer
+                                    box = checkbox.bounding_box()
+                                    if box:
+                                        page.mouse.move(box['x'] + box['width']/2, box['y'] + box['height']/2, steps=10)
+                                        human_delay(200, 500)
                                     checkbox.click()
                                     print(f"  [franime] ✓ Tentative de clic Cloudflare ({i+1})")
                             except: pass
-                    page.wait_for_timeout(2000)
+                    human_delay(2000, 3500)
 
-                # On attend le bouton final
-                page.wait_for_selector("button:has-text('Regarder'), .player-container", timeout=25_000)
+                # On attend le bouton final (on gère les traductions possibles)
+                page.wait_for_selector("button:has-text('Regarder'), button:has-text('Watch'), .player-container", timeout=35_000)
                 print("  [franime] ✓ Page accessible !")
-            except Exception:
-                print("  [franime] ⚠ Le challenge semble toujours présent ou le bouton n'apparaît pas.")
+            except Exception as e:
+                print(f"  [franime] ⚠ Le challenge semble toujours présent ou erreur : {e}")
                 page.wait_for_timeout(2_000)
 
         # Si un lecteur préféré est demandé, le sélectionner dans le dropdown
@@ -245,7 +312,12 @@ def extract_stream_url(page_url: str, preferred_lecteur: str | None = None) -> t
 
         # Clic "Regarder l'épisode"
         page.wait_for_timeout(2_000)
-        for sel in ["button:has-text('Regarder')", "a:has-text('Regarder')", "button:has-text('épisode')"]:
+        selectors = [
+            "button:has-text('Regarder')", "a:has-text('Regarder')", 
+            "button:has-text('Watch')", "a:has-text('Watch')",
+            "button:has-text('épisode')", "button:has-text('episode')"
+        ]
+        for sel in selectors:
             try:
                 el = page.query_selector(sel)
                 if el and el.is_visible():
@@ -318,25 +390,56 @@ def _select_lecteur(page, lecteur_name: str):
         print(f"  [franime] Impossible de changer de lecteur : {e}")
 
 
+# Compteur global pour le rafraîchissement de la console
+DOWNLOAD_COUNTER = 0
+
 def download_franime(url: str, output_path: str = "downloads",
                      download_type: str = "video", quality: str = "best") -> dict[str, Any]:
+    global DOWNLOAD_COUNTER
     os.makedirs(output_path, exist_ok=True)
 
-    # 1. Première tentative : on laisse la page charger son lecteur par défaut
-    # et on récupère TOUT ce qui passe sur le réseau.
-    print(f"\n  [franime] Analyse de la page : {url}")
-    stream_url, nom, all_captured, diagnostics = extract_stream_url(url, preferred_lecteur=None)
+    # Gestion de la latence console
+    from config import MAX_DOWNLOADS_BEFORE_REFRESH
+    DOWNLOAD_COUNTER += 1
+    if DOWNLOAD_COUNTER >= MAX_DOWNLOADS_BEFORE_REFRESH:
+        clear_terminal()
+        DOWNLOAD_COUNTER = 0
 
-    # On ne bloque que sur les erreurs fatales (401, 429) ou si vraiment rien n'est capturé
-    if diagnostics.get("blocked") and not stream_url:
-        status = diagnostics.get("main_status")
-        print(f"  [franime] ⚠ Page bloquée ({status}). Arrêt.")
+    # --- ANTI-SPAM DELAY ---
+    print(f"  [franime] Pause de sécurité anti-spam...")
+    human_delay(3000, 8000)
+
+    # Préparation des proxies (on ajoute None pour tester sans proxy aussi)
+    shuffled_proxies = list(PROXIES)
+    random.shuffle(shuffled_proxies)
+    proxies_to_try = shuffled_proxies + [None]
+
+    # 1. Tentative d'extraction avec rotation des proxies
+    stream_url = None
+    nom = None
+    all_captured = {}
+    
+    for proxy in proxies_to_try:
+        try:
+            print(f"\n  [franime] Analyse de la page (Proxy: {proxy or 'Direct'}) : {url}")
+            stream_url, nom, all_captured, diagnostics = extract_stream_url(url, proxy_url=proxy)
+            
+            if stream_url:
+                break # On a trouvé un flux !
+                
+            if diagnostics.get("blocked") and diagnostics.get("main_status") in {401, 429}:
+                print(f"  [franime] ⚠ Proxy bloqué ou erreur fatale ({diagnostics.get('main_status')}). Suivant...")
+                continue
+                
+        except Exception as e:
+            print(f"  [franime] ✗ Erreur avec le proxy {proxy} : {e}")
+            continue
+
+    if not stream_url and not all_captured:
         return {
             "success": False,
-            "filename": None,
-            "filepath": None,
-            "error": f"Page Franime bloquée ({status}).",
-            "reason": "page_blocked",
+            "error": "Impossible d'extraire les flux, même après rotation des proxies.",
+            "reason": "page_blocked"
         }
 
     # On garde trace des URLs déjà testées pour ne pas boucler inutilement
@@ -347,13 +450,17 @@ def download_franime(url: str, output_path: str = "downloads",
         if not s_url or s_url in tried_urls:
             return None
         tried_urls.add(s_url)
-        print(f"  [franime] Tentative de téléchargement [{s_name}] : {s_url[:100]}...")
-        try:
-            res = _download_stream(s_url, s_name, url, output_path, download_type, quality)
-            if res.get("filename"):
-                return res
-        except Exception as e:
-            print(f"  [franime] Échec avec {s_name} ({s_url[:50]}) : {e}")
+        
+        # On essaie tous les proxies pour ce flux spécifique si nécessaire
+        for proxy in proxies_to_try:
+            print(f"  [franime] Tentative [{s_name}] (Proxy: {proxy or 'Direct'}) : {s_url[:100]}...")
+            try:
+                res = _download_stream(s_url, s_name, url, output_path, download_type, quality, proxy_url=proxy)
+                if res.get("filename"):
+                    return res
+            except Exception as e:
+                print(f"  [franime] ✗ Échec proxy {proxy} : {e}")
+                continue
         return None
 
     # 2. On essaie d'abord le "meilleur" trouvé lors du premier passage (souvent HLS s'il est là)
@@ -406,7 +513,7 @@ def download_franime(url: str, output_path: str = "downloads",
 
 
 def _download_stream(stream_url: str, lecteur_name: str, page_url: str,
-                     output_path: str, download_type: str, quality: str) -> dict[str, Any]:
+                     output_path: str, download_type: str, quality: str, proxy_url: str | None = None) -> dict[str, Any]:
     import yt_dlp
     import subprocess
 
@@ -437,12 +544,26 @@ def _download_stream(stream_url: str, lecteur_name: str, page_url: str,
         "no_warnings": True,
         "noplaylist": True,
         "merge_output_format": "mp4",
+        "concurrent_fragment_downloads": 16,
+        "retries": 10,
+        "fragment_retries": 10,
+        "proxy": proxy_url, # Utilisation du proxy passé en argument
         "http_headers": {
             "Referer":    referer,
             "Origin":     referer.rstrip("/"),
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "User-Agent": random.choice(USER_AGENTS),
         },
     }
+
+    if shutil.which("aria2c"):
+        ydl_opts["external_downloader"] = "aria2c"
+        ydl_opts["external_downloader_args"] = [
+            "--max-connection-per-server=16",
+            "--split=16",
+            "--min-split-size=1M",
+            "--continue=true",
+        ]
+        print("  [aria2c] Téléchargeur rapide activé pour Franime")
 
     if ffmpeg_dir:
         ydl_opts["ffmpeg_location"] = ffmpeg_dir

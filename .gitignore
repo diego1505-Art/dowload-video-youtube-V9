@@ -29,5 +29,8 @@ pip-wheel-metadata/
 downloads/*
 !downloads/.gitkeep
 
+# Browser profiles
+browser_profile/
+
 # Logs
 *.log
