@@ -1,0 +1,1874 @@
+aria2c OK
+
+============================================================
+DowFlow — Multi-Site Media Downloader
+============================================================
+
+Serveur démarré sur http://127.0.0.1:5001
+Ctrl+C pour arrêter
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5001
+Press CTRL+C to quit
+127.0.0.1 - - [31/May/2026 13:40:43] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [31/May/2026 13:40:43] "GET /check-ffmpeg HTTP/1.1" 200 -
+127.0.0.1 - - [31/May/2026 13:41:43] "GET /check-ffmpeg HTTP/1.1" 200 -
+[DEBUG] Saison 2 -> anime_id conserve : 41024
+127.0.0.1 - - [31/May/2026 13:41:44] "POST /fetch-episodes HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=1&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=1&lang=vo&anime_id=41024
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+127.0.0.1 - - [31/May/2026 13:42:44] "GET /check-ffmpeg HTTP/1.1" 200 -
+
+  [franime] Forçage du lecteur : HLS
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=1&lang=vo&anime_id=41024
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/0/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=MzQ2MzY2NjczMzY3NjE2NzY3MzM2NzY1NjQ2MjM2NmU2NjY1MzU2NTY3MzU2MDYyMzQzMTM1NjE2NjZlN
+  [franime]   200  https://franime.fr/watch2/?a=MzQ2MzY2NjczMzY3NjE2NzY3MzM2NzY1NjQ2MjM2NmU2NjY1MzU2NTY3MzU2MDYyMzQzMTM
+  [franime]   200  https://api.franime.fr/api/time
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/d6ijb8if7i6l
+  [franime]   200  https://filemoon.to/e/d6ijb8if7i6l
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/d6ijb8if7i6l/embed/details
+  [franime]   200  https://filemoon.to/api/videos/d6ijb8if7i6l/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/qx3/d6ijb8if7i6l
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/d6ijb8if7i6l/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/d6ijb8if7i6l/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/qx3/d6ijb8if7i6l
+  [franime] ✓ [HLS] https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/07/11073/d6ijb8if7i6l_x/master.m3u8?t=KwbrnukU8GAFuaysEKmwUMV
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/d6ijb8if7i6l/embed/timeslider
+  [franime]   200  https://kodaggshnlesf.com/
+  [franime]   200  https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/07/11073/d6ijb8if7i6l_x/master.m3u8?t=KwbrnukU8GAFu
+  [franime] ✓ [HLS] https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/07/11073/d6ijb8if7i6l_x/index-v1-a1.m3u8?t=KwbrnukU8GAFuaysEK
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+  [franime] Lecteur choisi : HLS → https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/07/11073/d6ijb8if7i6l_x/master.m3u8?t=KwbrnukU8GAFu
+  [franime] Tentative de téléchargement [HLS] : https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/07/11073/d6ijb8if7i6l_x/master.m3u8?t=KwbrnukU8GAFu...
+[generic] Extracting URL: https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/07/11073/d6ijb8if7i6l_x/master.m3u8?t=KwbrnukU8G...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 1523
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 141
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep1-vo.mp4
+[download]  17.1% of ~ 318.45MiB at    3.38MiB/s ETA 01:15 (frag 24/141)127.0.0.1 - - [31/May/2026 13:43:44] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download] 100% of  269.74MiB in 00:01:10 at 3.84MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep1-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep1-vo.mp4
+127.0.0.1 - - [31/May/2026 13:44:42] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=2&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=2&lang=vo&anime_id=41024
+127.0.0.1 - - [31/May/2026 13:44:44] "GET /check-ffmpeg HTTP/1.1" 200 -
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/1/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=MzY2MjY1M2IzNzYxMzczNDYyMzYzNjNiNjEzMDMyNjUzMTYxMzQzNzNhMzczNjMyNjc2NzNhNjE2MDY2N
+  [franime]   200  https://franime.fr/watch2/?a=MzY2MjY1M2IzNzYxMzczNDYyMzYzNjNiNjEzMDMyNjUzMTYxMzQzNzNhMzczNjMyNjc2NzN
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/565u7ilnob0g
+  [franime]   200  https://api.franime.fr/api/time
+  [franime]   200  https://filemoon.to/e/565u7ilnob0g
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/565u7ilnob0g/embed/details
+  [franime]   200  https://filemoon.to/api/videos/565u7ilnob0g/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/ye6/565u7ilnob0g
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/565u7ilnob0g/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/565u7ilnob0g/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/ye6/565u7ilnob0g
+  [franime] ✓ [HLS] https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/05/11073/565u7ilnob0g_x/master.m3u8?t=RGW19--Xe1Eu5PRQbMnh
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/565u7ilnob0g/embed/timeslider
+  [franime]   200  https://kodaggshnlesf.com/
+  [franime]   200  https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/05/11073/565u7ilnob0g_x/master.m3u8?t=RGW19--Xe1
+  [franime] ✓ [HLS] https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/05/11073/565u7ilnob0g_x/index-v1-a1.m3u8?t=RGW19--Xe1Eu5PR
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+  [franime] Lecteur choisi : HLS → https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/05/11073/565u7ilnob0g_x/master.m3u8?t=RGW19--Xe1
+  [franime] Tentative de téléchargement [HLS] : https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/05/11073/565u7ilnob0g_x/master.m3u8?t=RGW19--Xe1...
+[generic] Extracting URL: https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/05/11073/565u7ilnob0g_x/master.m3u8?t=RGW19--...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 1609
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 142
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep2-vo.mp4
+[download]  45.2% of ~ 297.73MiB at    3.37MiB/s ETA 00:46 (frag 64/142)127.0.0.1 - - [31/May/2026 13:45:44] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download] 100% of  284.63MiB in 00:01:05 at 4.37MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep2-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep2-vo.mp4
+127.0.0.1 - - [31/May/2026 13:46:19] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=3&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=3&lang=vo&anime_id=41024
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/2/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=NjU2ZjZhNjkzYTZjNmMzZDM4MzkzYTNlNjUzOTZkNmIzYTZkNjg2ZTZkNjQzOTNhNmU2NTZiNmEzZTZiM
+  [franime]   200  https://franime.fr/watch2/?a=NjU2ZjZhNjkzYTZjNmMzZDM4MzkzYTNlNjUzOTZkNmIzYTZkNjg2ZTZkNjQzOTNhNmU2NTZ
+  [franime]   200  https://api.franime.fr/api/time
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/0brlmdeji50e
+  [franime]   200  https://filemoon.to/e/0brlmdeji50e
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/0brlmdeji50e/embed/details
+  [franime]   200  https://filemoon.to/api/videos/0brlmdeji50e/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/g0b78/0brlmdeji50e
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/0brlmdeji50e/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/0brlmdeji50e/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/g0b78/0brlmdeji50e
+  [franime] ✓ [HLS] https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/02/11073/0brlmdeji50e_x/master.m3u8?t=wJGvacsARA-ES-53Fkz82u0oTx
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/0brlmdeji50e/embed/timeslider
+  [franime]   200  https://kodaggshnlesf.com/
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+127.0.0.1 - - [31/May/2026 13:46:44] "GET /check-ffmpeg HTTP/1.1" 200 -
+  [franime] Lecteur choisi : HLS → https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/02/11073/0brlmdeji50e_x/master.m3u8?t=wJGvacsARA-ES-53
+  [franime] Tentative de téléchargement [HLS] : https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/02/11073/0brlmdeji50e_x/master.m3u8?t=wJGvacsARA-ES-53...
+[generic] Extracting URL: https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/02/11073/0brlmdeji50e_x/master.m3u8?t=wJGvacsARA-ES...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 1470
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 142
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep3-vo.mp4
+[download]  82.2% of ~ 258.36MiB at    4.53MiB/s ETA 00:10 (frag 117/142)127.0.0.1 - - [31/May/2026 13:47:44] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download] 100% of  260.55MiB in 00:01:04 at 4.05MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep3-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep3-vo.mp4
+127.0.0.1 - - [31/May/2026 13:47:56] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=4&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=4&lang=vo&anime_id=41024
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/3/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=NmE2YjNmM2YzZTM5NmQ2NDZiM2E2YTY4M2E2YjNhM2Y2NTNmNjgzYTY4M2Y2OTZhNmQ2OTZkM2Y2NDM4N
+  [franime]   200  https://franime.fr/watch2/?a=NmE2YjNmM2YzZTM5NmQ2NDZiM2E2YTY4M2E2YjNhM2Y2NTNmNjgzYTY4M2Y2OTZhNmQ2OTZ
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/zr3ambw78nhm
+  [franime]   200  https://api.franime.fr/api/time
+  [franime]   200  https://filemoon.to/e/zr3ambw78nhm
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/zr3ambw78nhm/embed/details
+  [franime]   200  https://filemoon.to/api/videos/zr3ambw78nhm/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/d3rt/zr3ambw78nhm
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/zr3ambw78nhm/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/zr3ambw78nhm/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/d3rt/zr3ambw78nhm
+  [franime] ✓ [HLS] https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/10/11073/zr3ambw78nhm_x/master.m3u8?t=MaQpUHn98gew9F3I4A4OPvt5Sj
+  [franime]   200  https://kodaggshnlesf.com/
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/zr3ambw78nhm/embed/timeslider
+  [franime]   200  https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/10/11073/zr3ambw78nhm_x/master.m3u8?t=MaQpUHn98gew9F3I
+  [franime] ✓ [HLS] https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/10/11073/zr3ambw78nhm_x/index-v1-a1.m3u8?t=MaQpUHn98gew9F3I4A4OP
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+  [franime] Lecteur choisi : HLS → https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/10/11073/zr3ambw78nhm_x/master.m3u8?t=MaQpUHn98gew9F3I
+  [franime] Tentative de téléchargement [HLS] : https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/10/11073/zr3ambw78nhm_x/master.m3u8?t=MaQpUHn98gew9F3I...
+[generic] Extracting URL: https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/10/11073/zr3ambw78nhm_x/master.m3u8?t=MaQpUHn98gew9...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 1225
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 142
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep4-vo.mp4
+[download]  22.5% of ~ 258.47MiB at    4.59MiB/s ETA 00:44 (frag 33/142)127.0.0.1 - - [31/May/2026 13:48:45] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download] 100% of  218.13MiB in 00:00:57 at 3.80MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep4-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep4-vo.mp4
+127.0.0.1 - - [31/May/2026 13:49:27] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=5&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=5&lang=vo&anime_id=41024
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime]   200  https://bid.onclcktg.com/tags/262639?version_name=b&domain=franime.fr
+  [franime]   200  https://onclckmetrics.com/in/track?data=eyJ3bCI6MCwic3ViaWQiOjAsInVzZXJfaWQiOiIxMjEzMzQwNzgzMTQ1OTEw
+  [franime]   200  https://onclckinp.com/keywords
+  [franime]   200  https://fp.metricswpsh.com/fp?tag_id=262639
+  [franime]   204  https://a.adspector.io/sync?ssp=44
+  [franime]   200  https://drimquop.com/in/dip?event_id=891371fd-9f82-4b9b-a2d1-1993c48f4b54
+  [franime]   204  https://bid.onclckbn.net/get/?go=1&data=eyJpbXAiOlt7InNlY3VyZSI6MSwiZXh0Ijp7InRhZ19hYiI6ImIiLCJtdWx0
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/4/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=MzEzMTM3NjUzYzYyMzA2NzM0Njc2NjMzNjczZDY2M2QzMjMyMzY2NjYyNjAzNzY1NjEzNjMxM2QzMzNjM
+  [franime]   200  https://franime.fr/watch2/?a=MzEzMTM3NjUzYzYyMzA2NzM0Njc2NjMzNjczZDY2M2QzMjMyMzY2NjYyNjAzNzY1NjEzNjM
+  [franime]   200  https://api.franime.fr/api/time
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/ru655kiqmvgh
+  [franime]   200  https://filemoon.to/e/ru655kiqmvgh
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/ru655kiqmvgh/embed/details
+  [franime]   200  https://filemoon.to/api/videos/ru655kiqmvgh/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/c0mw/ru655kiqmvgh
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/ru655kiqmvgh/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/ru655kiqmvgh/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/c0mw/ru655kiqmvgh
+  [franime] ✓ [HLS] https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/01/11073/ru655kiqmvgh_x/master.m3u8?t=HOZ2yyJLCpLGQqtvEEyZBQf
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/ru655kiqmvgh/embed/timeslider
+  [franime]   200  https://kodaggshnlesf.com/
+  [franime]   200  https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/01/11073/ru655kiqmvgh_x/master.m3u8?t=HOZ2yyJLCpLGQ
+  [franime] ✓ [HLS] https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/01/11073/ru655kiqmvgh_x/index-v1-a1.m3u8?t=HOZ2yyJLCpLGQqtvEE
+  [franime]   200  https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/01/11073/ru655kiqmvgh_x/index-v1-a1.m3u8?t=HOZ2yyJL
+  [franime] ✓ [HLS] (content-type) https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/01/11073/ru655kiqmvgh_x/seg-1-v1-a1.ts?t=HOZ2yyJLCp
+  [franime]   200  https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/01/11073/ru655kiqmvgh_x/seg-1-v1-a1.ts?t=HOZ2yyJLCp
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+127.0.0.1 - - [31/May/2026 13:49:46] "GET /check-ffmpeg HTTP/1.1" 200 -
+  [franime] Lecteur choisi : HLS → https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/01/11073/ru655kiqmvgh_x/master.m3u8?t=HOZ2yyJLCpLGQ
+  [franime] Tentative de téléchargement [HLS] : https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/01/11073/ru655kiqmvgh_x/master.m3u8?t=HOZ2yyJLCpLGQ...
+[generic] Extracting URL: https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/01/11073/ru655kiqmvgh_x/master.m3u8?t=HOZ2yyJLCp...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 984
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 143
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep5-vo.mp4
+[download]  90.2% of ~ 168.61MiB at    3.59MiB/s ETA 00:04 (frag 134/143)127.0.0.1 - - [31/May/2026 13:50:47] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download] 100% of  176.42MiB in 00:00:54 at 3.21MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep5-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep5-vo.mp4
+127.0.0.1 - - [31/May/2026 13:50:53] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=6&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=6&lang=vo&anime_id=41024
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime]   200  https://bid.onclcktg.com/tags/262639?version_name=d&domain=franime.fr
+  [franime]   200  https://onclckmetrics.com/in/track?data=eyJ3bCI6MCwic3ViaWQiOjAsInVzZXJfaWQiOiI4OTczNzgxNjIyNjk1MjUy
+  [franime]   200  https://onclckinp.com/keywords
+  [franime]   200  https://fp.metricswpsh.com/fp?tag_id=262639
+  [franime]   200  https://drimquop.com/in/dip?event_id=ef963d50-db63-446e-bfe5-9b8eda1e4e37
+  [franime]   204  https://bid.onclckbn.net/get/?go=1&data=eyJpbXAiOlt7InNlY3VyZSI6MSwiZXh0Ijp7InRhZ19hYiI6ImQiLCJtdWx0
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/5/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=MzczZTNhNmEzZjZiM2UzODM2NmMzYzZkMzgzYzM3NmQ2YzM3MzYzYjM2M2QzZDY4MzgzYzNkNmYzNzM3N
+  [franime]   200  https://franime.fr/watch2/?a=MzczZTNhNmEzZjZiM2UzODM2NmMzYzZkMzgzYzM3NmQ2YzM3MzYzYjM2M2QzZDY4MzgzYzN
+  [franime]   200  https://api.franime.fr/api/time
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/3hr4g4dh947i
+  [franime]   200  https://filemoon.to/e/3hr4g4dh947i
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/3hr4g4dh947i/embed/details
+  [franime]   200  https://filemoon.to/api/videos/3hr4g4dh947i/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/33hyh/3hr4g4dh947i
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/3hr4g4dh947i/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/3hr4g4dh947i/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/33hyh/3hr4g4dh947i
+  [franime] ✓ [HLS] https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/3hr4g4dh947i_x/master.m3u8?t=HB_w4TW6hR2CoWVSDp-g8QjnRV
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/3hr4g4dh947i/embed/timeslider
+  [franime]   200  https://kodaggshnlesf.com/
+  [franime]   200  https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/3hr4g4dh947i_x/master.m3u8?t=HB_w4TW6hR2CoWVS
+  [franime] ✓ [HLS] https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/3hr4g4dh947i_x/index-v1-a1.m3u8?t=HB_w4TW6hR2CoWVSDp-g8
+  [franime]   200  https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/3hr4g4dh947i_x/index-v1-a1.m3u8?t=HB_w4TW6hR2
+  [franime] ✓ [HLS] (content-type) https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/3hr4g4dh947i_x/seg-1-v1-a1.ts?t=HB_w4TW6hR2Co
+  [franime]   200  https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/3hr4g4dh947i_x/seg-1-v1-a1.ts?t=HB_w4TW6hR2Co
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+  [franime] Lecteur choisi : HLS → https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/3hr4g4dh947i_x/master.m3u8?t=HB_w4TW6hR2CoWVS
+  [franime] Tentative de téléchargement [HLS] : https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/3hr4g4dh947i_x/master.m3u8?t=HB_w4TW6hR2CoWVS...
+[generic] Extracting URL: https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/3hr4g4dh947i_x/master.m3u8?t=HB_w4TW6hR2Co...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 1312
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 142
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep6-vo.mp4
+[download]  51.6% of ~ 197.79MiB at    3.80MiB/s ETA 00:26 (frag 74/142)127.0.0.1 - - [31/May/2026 13:51:48] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download] 100% of  233.26MiB in 00:00:57 at 4.04MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep6-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep6-vo.mp4
+127.0.0.1 - - [31/May/2026 13:52:22] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=7&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=7&lang=vo&anime_id=41024
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/6/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=NmEzODZjNjgzZDM4NmMzZjM4Mzg2NjM4NmUzZDNiNjgzZDZlM2I2NzY5Njg2YTNhM2Y2NzY5NjczZjZlN
+  [franime]   200  https://franime.fr/watch2/?a=NmEzODZjNjgzZDM4NmMzZjM4Mzg2NjM4NmUzZDNiNjgzZDZlM2I2NzY5Njg2YTNhM2Y2NzY
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/t28jmu9ulcns
+  [franime]   200  https://api.franime.fr/api/time
+  [franime]   200  https://filemoon.to/e/t28jmu9ulcns
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/t28jmu9ulcns/embed/details
+  [franime]   200  https://filemoon.to/api/videos/t28jmu9ulcns/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/1ki/t28jmu9ulcns
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/t28jmu9ulcns/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/t28jmu9ulcns/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/1ki/t28jmu9ulcns
+  [franime] ✓ [HLS] https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/02/11073/t28jmu9ulcns_x/master.m3u8?t=SktUIJ_XdS_KXfcF1E_nUNm
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/t28jmu9ulcns/embed/timeslider
+  [franime]   200  https://kodaggshnlesf.com/
+  [franime]   200  https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/02/11073/t28jmu9ulcns_x/master.m3u8?t=SktUIJ_XdS_KX
+  [franime] ✓ [HLS] https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/02/11073/t28jmu9ulcns_x/index-v1-a1.m3u8?t=SktUIJ_XdS_KXfcF1E
+  [franime]   200  https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/02/11073/t28jmu9ulcns_x/index-v1-a1.m3u8?t=SktUIJ_X
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+127.0.0.1 - - [31/May/2026 13:52:49] "GET /check-ffmpeg HTTP/1.1" 200 -
+  [franime] Lecteur choisi : HLS → https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/02/11073/t28jmu9ulcns_x/master.m3u8?t=SktUIJ_XdS_KX
+  [franime] Tentative de téléchargement [HLS] : https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/02/11073/t28jmu9ulcns_x/master.m3u8?t=SktUIJ_XdS_KX...
+[generic] Extracting URL: https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/02/11073/t28jmu9ulcns_x/master.m3u8?t=SktUIJ_XdS...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 1578
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 141
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep7-vo.mp4
+[download]  73.9% of ~ 257.51MiB at    4.40MiB/s ETA 00:15 (frag 106/141)127.0.0.1 - - [31/May/2026 13:53:50] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download] 100% of  279.38MiB in 00:01:18 at 3.58MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep7-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep7-vo.mp4
+127.0.0.1 - - [31/May/2026 13:54:11] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=8&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=8&lang=vo&anime_id=41024
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/7/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=NjM2MzMzMzY2NDMwNjQzNTM3MzI2MzMwMzQzNTMyNjEzZDNkMzY2MDM2NjEzMjYwMzA2NzYxM2Q2MDYxN
+  [franime]   200  https://franime.fr/watch2/?a=NjM2MzMzMzY2NDMwNjQzNTM3MzI2MzMwMzQzNTMyNjEzZDNkMzY2MDM2NjEzMjYwMzA2NzY
+  [franime]   200  https://api.franime.fr/api/time
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/pt76ph2tv7cq
+  [franime]   200  https://filemoon.to/e/pt76ph2tv7cq
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/pt76ph2tv7cq/embed/details
+  [franime]   200  https://filemoon.to/api/videos/pt76ph2tv7cq/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/ycc/pt76ph2tv7cq
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/pt76ph2tv7cq/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/pt76ph2tv7cq/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/ycc/pt76ph2tv7cq
+  [franime] ✓ [HLS] https://edge1-waw-sprintcdn.r66nv9ed.com/hls2/07/11073/pt76ph2tv7cq_x/master.m3u8?t=oJn6WTdPaOx8wYJFK7PdAPvEl9
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/pt76ph2tv7cq/embed/timeslider
+  [franime]   200  https://kodaggshnlesf.com/
+  [franime]   200  https://edge1-waw-sprintcdn.r66nv9ed.com/hls2/07/11073/pt76ph2tv7cq_x/master.m3u8?t=oJn6WTdPaOx8wYJF
+  [franime] ✓ [HLS] https://edge1-waw-sprintcdn.r66nv9ed.com/hls2/07/11073/pt76ph2tv7cq_x/index-v1-a1.m3u8?t=oJn6WTdPaOx8wYJFK7PdA
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+  [franime] Lecteur choisi : HLS → https://edge1-waw-sprintcdn.r66nv9ed.com/hls2/07/11073/pt76ph2tv7cq_x/master.m3u8?t=oJn6WTdPaOx8wYJF
+  [franime] Tentative de téléchargement [HLS] : https://edge1-waw-sprintcdn.r66nv9ed.com/hls2/07/11073/pt76ph2tv7cq_x/master.m3u8?t=oJn6WTdPaOx8wYJF...
+[generic] Extracting URL: https://edge1-waw-sprintcdn.r66nv9ed.com/hls2/07/11073/pt76ph2tv7cq_x/master.m3u8?t=oJn6WTdPaOx8w...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 1615
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 141
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep8-vo.mp4
+[download]   9.3% of ~ 461.96MiB at    4.57MiB/s ETA 01:34 (frag 13/141)127.0.0.1 - - [31/May/2026 13:54:51] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download] 100% of  285.78MiB in 00:01:07 at 4.24MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep8-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep8-vo.mp4
+127.0.0.1 - - [31/May/2026 13:55:50] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=9&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=9&lang=vo&anime_id=41024
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+127.0.0.1 - - [31/May/2026 13:55:52] "GET /check-ffmpeg HTTP/1.1" 200 -
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/8/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=M2I2YjZjM2QzZDY4M2IzYTY2Njc2YzM5M2M2OTY2M2QzOTNhNjczZTZlNmQzZDZjNjg2ZDY4M2M2ZjZkN
+  [franime]   200  https://franime.fr/watch2/?a=M2I2YjZjM2QzZDY4M2IzYTY2Njc2YzM5M2M2OTY2M2QzOTNhNjczZTZlNmQzZDZjNjg2ZDY
+  [franime]   200  https://api.franime.fr/api/time
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/kl9lq5gc1v2i
+  [franime]   200  https://filemoon.to/e/kl9lq5gc1v2i
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/kl9lq5gc1v2i/embed/details
+  [franime]   200  https://filemoon.to/api/videos/kl9lq5gc1v2i/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/flh72/kl9lq5gc1v2i
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/kl9lq5gc1v2i/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/kl9lq5gc1v2i/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/flh72/kl9lq5gc1v2i
+  [franime] ✓ [HLS] https://be7713.rcr82.waw05.r66nv9ed.com/hls2/07/11073/kl9lq5gc1v2i_x/master.m3u8?t=eiSkVB4iXs5Rm08sbdgn9NiB2i2
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/kl9lq5gc1v2i/embed/timeslider
+  [franime]   200  https://kodaggshnlesf.com/
+  [franime]   200  https://be7713.rcr82.waw05.r66nv9ed.com/hls2/07/11073/kl9lq5gc1v2i_x/master.m3u8?t=eiSkVB4iXs5Rm08sb
+  [franime] ✓ [HLS] https://be7713.rcr82.waw05.r66nv9ed.com/hls2/07/11073/kl9lq5gc1v2i_x/index-v1-a1.m3u8?t=eiSkVB4iXs5Rm08sbdgn9N
+  [franime]   200  https://be7713.rcr82.waw05.r66nv9ed.com/hls2/07/11073/kl9lq5gc1v2i_x/index-v1-a1.m3u8?t=eiSkVB4iXs5R
+  [franime] ✓ [HLS] (content-type) https://be7713.rcr82.waw05.r66nv9ed.com/hls2/07/11073/kl9lq5gc1v2i_x/seg-1-v1-a1.ts?t=eiSkVB4iXs5Rm0
+  [franime]   200  https://be7713.rcr82.waw05.r66nv9ed.com/hls2/07/11073/kl9lq5gc1v2i_x/seg-1-v1-a1.ts?t=eiSkVB4iXs5Rm0
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+  [franime] Lecteur choisi : HLS → https://be7713.rcr82.waw05.r66nv9ed.com/hls2/07/11073/kl9lq5gc1v2i_x/master.m3u8?t=eiSkVB4iXs5Rm08sb
+  [franime] Tentative de téléchargement [HLS] : https://be7713.rcr82.waw05.r66nv9ed.com/hls2/07/11073/kl9lq5gc1v2i_x/master.m3u8?t=eiSkVB4iXs5Rm08sb...
+[generic] Extracting URL: https://be7713.rcr82.waw05.r66nv9ed.com/hls2/07/11073/kl9lq5gc1v2i_x/master.m3u8?t=eiSkVB4iXs5Rm0...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 1346
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 142
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep9-vo.mp4
+[download]  60.9% of ~ 237.48MiB at    3.44MiB/s ETA 00:26 (frag 86/142)127.0.0.1 - - [31/May/2026 13:56:53] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download] 100% of  239.16MiB in 00:00:55 at 4.34MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep9-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep9-vo.mp4
+127.0.0.1 - - [31/May/2026 13:57:16] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=10&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=10&lang=vo&anime_id=41024
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/9/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=NjIzNjM1NjMzNjM1MzQzNjY3Njk2MjY2MzU2NjY5NjY2NzY2MzU2NTY4Njg2MjY0Njk2MTYzMzY2NzMxM
+  [franime]   200  https://franime.fr/watch2/?a=NjIzNjM1NjMzNjM1MzQzNjY3Njk2MjY2MzU2NjY5NjY2NzY2MzU2NTY4Njg2MjY0Njk2MTY
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/bwuq8mmjgwbv
+  [franime]   200  https://api.franime.fr/api/time
+  [franime]   200  https://filemoon.to/e/bwuq8mmjgwbv
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/bwuq8mmjgwbv/embed/details
+  [franime]   200  https://filemoon.to/api/videos/bwuq8mmjgwbv/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/zjn/bwuq8mmjgwbv
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/bwuq8mmjgwbv/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/bwuq8mmjgwbv/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/zjn/bwuq8mmjgwbv
+  [franime] ✓ [HLS] https://edge1-vienna-sprintcdn.owphbf24.com/hls2/01/11073/bwuq8mmjgwbv_x/master.m3u8?t=NNAPe5eHVQuJU7xnuUbE5LY
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/bwuq8mmjgwbv/embed/timeslider
+  [franime]   200  https://kodaggshnlesf.com/
+  [franime]   200  https://edge1-vienna-sprintcdn.owphbf24.com/hls2/01/11073/bwuq8mmjgwbv_x/master.m3u8?t=NNAPe5eHVQuJU
+  [franime] ✓ [HLS] https://edge1-vienna-sprintcdn.owphbf24.com/hls2/01/11073/bwuq8mmjgwbv_x/index-v1-a1.m3u8?t=NNAPe5eHVQuJU7xnuU
+  [franime]   200  https://edge1-vienna-sprintcdn.owphbf24.com/hls2/01/11073/bwuq8mmjgwbv_x/index-v1-a1.m3u8?t=NNAPe5eH
+  [franime] ✓ [HLS] (content-type) https://edge1-vienna-sprintcdn.owphbf24.com/hls2/01/11073/bwuq8mmjgwbv_x/seg-1-v1-a1.ts?t=NNAPe5eHVQ
+  [franime]   200  https://edge1-vienna-sprintcdn.owphbf24.com/hls2/01/11073/bwuq8mmjgwbv_x/seg-1-v1-a1.ts?t=NNAPe5eHVQ
+  [franime]   204  https://jcphi.com/5/10988226/?oo=1&js_build=iclick-v1.1804.0&userId=080347a0f0c6485aee3a205e6da4cce8
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+  [franime] Lecteur choisi : HLS → https://edge1-vienna-sprintcdn.owphbf24.com/hls2/01/11073/bwuq8mmjgwbv_x/master.m3u8?t=NNAPe5eHVQuJU
+  [franime] Tentative de téléchargement [HLS] : https://edge1-vienna-sprintcdn.owphbf24.com/hls2/01/11073/bwuq8mmjgwbv_x/master.m3u8?t=NNAPe5eHVQuJU...
+[generic] Extracting URL: https://edge1-vienna-sprintcdn.owphbf24.com/hls2/01/11073/bwuq8mmjgwbv_x/master.m3u8?t=NNAPe5eHVQ...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 1346
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 142
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep10-vo.mp4
+[download]   7.8% of ~ 476.62MiB at    4.94MiB/s ETA 01:25 (frag 11/142)127.0.0.1 - - [31/May/2026 13:57:54] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download] 100% of  239.16MiB in 00:00:52 at 4.59MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep10-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep10-vo.mp4
+127.0.0.1 - - [31/May/2026 13:58:39] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=11&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=11&lang=vo&anime_id=41024
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/10/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=MzkzZDZjMzIzZDZlM2IzMjZlNjkzYzNiNjkzZTNiM2YzOTZiNmM2YjZjMzkzZTM4NmIzYTMzMzIzZjZmM
+  [franime]   200  https://franime.fr/watch2/?a=MzkzZDZjMzIzZDZlM2IzMjZlNjkzYzNiNjkzZTNiM2YzOTZiNmM2YjZjMzkzZTM4NmIzYTM
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/3k6wym6q7ezg
+  [franime]   200  https://api.franime.fr/api/time
+  [franime]   200  https://filemoon.to/e/3k6wym6q7ezg
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+127.0.0.1 - - [31/May/2026 13:58:55] "GET /check-ffmpeg HTTP/1.1" 200 -
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/3k6wym6q7ezg/embed/details
+  [franime]   200  https://filemoon.to/api/videos/3k6wym6q7ezg/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/mzs7/3k6wym6q7ezg
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/3k6wym6q7ezg/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/3k6wym6q7ezg/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/mzs7/3k6wym6q7ezg
+  [franime] ✓ [HLS] https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/04/11073/3k6wym6q7ezg_x/master.m3u8?t=tIBGSUK4zUFkONeUunaJ
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/3k6wym6q7ezg/embed/timeslider
+  [franime]   200  https://kodaggshnlesf.com/
+  [franime]   200  https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/04/11073/3k6wym6q7ezg_x/master.m3u8?t=tIBGSUK4zU
+  [franime] ✓ [HLS] https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/04/11073/3k6wym6q7ezg_x/index-v1-a1.m3u8?t=tIBGSUK4zUFkONe
+  [franime]   200  https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/04/11073/3k6wym6q7ezg_x/index-v1-a1.m3u8?t=tIBGS
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+  [franime] Lecteur choisi : HLS → https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/04/11073/3k6wym6q7ezg_x/master.m3u8?t=tIBGSUK4zU
+  [franime] Tentative de téléchargement [HLS] : https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/04/11073/3k6wym6q7ezg_x/master.m3u8?t=tIBGSUK4zU...
+[generic] Extracting URL: https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/04/11073/3k6wym6q7ezg_x/master.m3u8?t=tIBGSUK...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 1741
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 143
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep11-vo.mp4
+[download]  52.6% of ~ 344.03MiB at    3.67MiB/s ETA 00:37 (frag 75/143)127.0.0.1 - - [31/May/2026 13:59:56] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download] 100% of  308.64MiB in 00:01:15 at 4.08MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep11-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep11-vo.mp4
+127.0.0.1 - - [31/May/2026 14:00:26] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=12&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=12&lang=vo&anime_id=41024
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/11/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=MzU2YjY0MzA2YTYyMzYzNzMxNjU2MzYzNjE2MDYyNjI2YjMyNjU2NzY0NmEzNzYyMzI2NDM1NjczNzYzN
+  [franime]   200  https://franime.fr/watch2/?a=MzU2YjY0MzA2YTYyMzYzNzMxNjU2MzYzNjE2MDYyNjI2YjMyNjU2NzY0NmEzNzYyMzI2NDM
+  [franime]   200  https://api.franime.fr/api/time
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/p5c5x08r867n
+  [franime]   200  https://filemoon.to/e/p5c5x08r867n
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/p5c5x08r867n/embed/details
+  [franime]   200  https://filemoon.to/api/videos/p5c5x08r867n/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/62aq/p5c5x08r867n
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/p5c5x08r867n/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/p5c5x08r867n/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/62aq/p5c5x08r867n
+  [franime] ✓ [HLS] https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/07/11073/p5c5x08r867n_x/master.m3u8?t=GyP_6JUkwHNF4tBoV8MuK_SSuN
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/p5c5x08r867n/embed/timeslider
+  [franime]   200  https://nldproiqqwdnc.com/
+  [franime]   200  https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/07/11073/p5c5x08r867n_x/master.m3u8?t=GyP_6JUkwHNF4tBo
+  [franime] ✓ [HLS] https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/07/11073/p5c5x08r867n_x/index-v1-a1.m3u8?t=GyP_6JUkwHNF4tBoV8MuK
+  [franime]   200  https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/07/11073/p5c5x08r867n_x/index-v1-a1.m3u8?t=GyP_6JUkwHN
+  [franime] ✓ [HLS] (content-type) https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/07/11073/p5c5x08r867n_x/seg-1-v1-a1.ts?t=GyP_6JUkwHNF4
+  [franime]   200  https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/07/11073/p5c5x08r867n_x/seg-1-v1-a1.ts?t=GyP_6JUkwHNF4
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+  [franime] Lecteur choisi : HLS → https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/07/11073/p5c5x08r867n_x/master.m3u8?t=GyP_6JUkwHNF4tBo
+  [franime] Tentative de téléchargement [HLS] : https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/07/11073/p5c5x08r867n_x/master.m3u8?t=GyP_6JUkwHNF4tBo...
+[generic] Extracting URL: https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/07/11073/p5c5x08r867n_x/master.m3u8?t=GyP_6JUkwHNF4...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 1763
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 141
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep12-vo.mp4
+[download]   0.0% of ~ 214.24MiB at  158.99KiB/s ETA Unknown (frag 0/141)127.0.0.1 - - [31/May/2026 14:00:57] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download]  92.5% of ~ 316.33MiB at    4.51MiB/s ETA 00:06 (frag 130/141)127.0.0.1 - - [31/May/2026 14:01:58] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download] 100% of  311.43MiB in 00:01:05 at 4.74MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep12-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep12-vo.mp4
+127.0.0.1 - - [31/May/2026 14:02:03] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=13&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=13&lang=vo&anime_id=41024
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/12/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=Njg2ZDNlM2QzMzZhMzkzMzM5MzkzODY5M2Q2ODZkM2M2ZDNjMzI2ODZmMzkzMzNkNjkzZjNiNjkzZTNhM
+  [franime]   200  https://franime.fr/watch2/?a=Njg2ZDNlM2QzMzZhMzkzMzM5MzkzODY5M2Q2ODZkM2M2ZDNjMzI2ODZmMzkzMzNkNjkzZjN
+  [franime]   200  https://api.franime.fr/api/time
+  [franime] ✓ [SIBNET] https://video.sibnet.ru/shell.php?videoid=4282554
+  [franime]   200  https://video.sibnet.ru/shell.php?videoid=4282554
+  [franime]   200  https://video.sibnet.ru/export/playlist_xml.php?videoid=4282554&k=b6f186794970fa84b4f4835519e32c03&d
+  [franime]   200  https://video.sibnet.ru/export/playnext_xml.php?videoid=4282554&shell=1&format=json&format=json
+  [franime]   200  https://c.sibnet.ru/sbcount?tc_project=%5B2169%5D&title=%D0%92%D0%B8%D0%B4%D0%B5%D0%BE%20%D1%80%D0%B
+  [franime]   200  https://c.sibnet.ru/sbcount?tc_project=%5B3379%5D&title=%D0%92%D0%B8%D0%B4%D0%B5%D0%BE%20%D1%80%D0%B
+  [franime]   200  https://cvt1.sibnet.ru/sbcount?&pid=2169&title=%D0%92%D0%B8%D0%B4%D0%B5%D0%BE%20%D1%80%D0%BE%D0%BB%D
+  [franime]   200  https://vst.sibnet.ru/catch?event=load&val=null&videoid=4282554&banner=2&tags=2598,675521&cliptime=1
+  [franime] Lecteur choisi : SIBNET → https://video.sibnet.ru/shell.php?videoid=4282554
+  [franime] Tentative de téléchargement [SIBNET] : https://video.sibnet.ru/shell.php?videoid=4282554...
+[generic] Extracting URL: https://video.sibnet.ru/shell.php?videoid=4282554
+[generic] shell: Downloading webpage
+[generic] shell: Extracting information
+[info] shell: Downloading 1 format(s): 0
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep13-vo.mp4
+[download]  55.5% of  220.79MiB at    5.56MiB/s ETA 00:17127.0.0.1 - - [31/May/2026 14:02:59] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download] 100% of  220.79MiB in 00:00:36 at 6.01MiB/s
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep13-vo.mp4
+127.0.0.1 - - [31/May/2026 14:03:12] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=14&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=14&lang=vo&anime_id=41024
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/13/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=MzkzZjNiNmIzODNkNmQ2ODZmMzE2ZDZhM2YzZjNmNmY2ZDM4NmIzYTZkNmMzMDZhM2Q2ODZkMzgzYzNmM
+  [franime]   200  https://franime.fr/watch2/?a=MzkzZjNiNmIzODNkNmQ2ODZmMzE2ZDZhM2YzZjNmNmY2ZDM4NmIzYTZkNmMzMDZhM2Q2ODZ
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/iyeu2k1ynz2g
+  [franime]   200  https://api.franime.fr/api/time
+  [franime]   200  https://filemoon.to/e/iyeu2k1ynz2g
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/iyeu2k1ynz2g/embed/details
+  [franime]   200  https://filemoon.to/api/videos/iyeu2k1ynz2g/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/8wt/iyeu2k1ynz2g
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/iyeu2k1ynz2g/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/iyeu2k1ynz2g/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/8wt/iyeu2k1ynz2g
+  [franime] ✓ [HLS] https://edge1-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/iyeu2k1ynz2g_x/master.m3u8?t=F7APQpUH39M0SNjmUCqkdLAEMw
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/iyeu2k1ynz2g/embed/timeslider
+  [franime]   200  https://nldproiqqwdnc.com/
+  [franime]   200  https://edge1-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/iyeu2k1ynz2g_x/master.m3u8?t=F7APQpUH39M0SNjm
+  [franime] ✓ [HLS] https://edge1-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/iyeu2k1ynz2g_x/index-v1-a1.m3u8?t=F7APQpUH39M0SNjmUCqkd
+  [franime]   200  https://edge1-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/iyeu2k1ynz2g_x/index-v1-a1.m3u8?t=F7APQpUH39M
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+  [franime] Lecteur choisi : HLS → https://edge1-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/iyeu2k1ynz2g_x/master.m3u8?t=F7APQpUH39M0SNjm
+  [franime] Tentative de téléchargement [HLS] : https://edge1-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/iyeu2k1ynz2g_x/master.m3u8?t=F7APQpUH39M0SNjm...
+[generic] Extracting URL: https://edge1-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/iyeu2k1ynz2g_x/master.m3u8?t=F7APQpUH39M0S...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 1576
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 142
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep14-vo.mp4
+[download]  15.0% of ~ 477.09MiB at    4.99MiB/s ETA 01:22 (frag 21/142)127.0.0.1 - - [31/May/2026 14:04:00] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download]  96.8% of ~ 278.55MiB at    5.43MiB/s ETA 00:02 (frag 139/142)127.0.0.1 - - [31/May/2026 14:05:01] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download] 100% of  278.94MiB in 00:01:23 at 3.33MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep14-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep14-vo.mp4
+127.0.0.1 - - [31/May/2026 14:05:07] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=15&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=15&lang=vo&anime_id=41024
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/14/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=MzY2MDYwNjQ2MDYyMzIzMTMwNjA2YjMyMzU2MTYwNjczNTM1NjQzNjMwMzY2NzY3NjE2NTY3NjI2NzYwN
+  [franime]   200  https://franime.fr/watch2/?a=MzY2MDYwNjQ2MDYyMzIzMTMwNjA2YjMyMzU2MTYwNjczNTM1NjQzNjMwMzY2NzY3NjE2NTY
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/hz4jva0ledbg
+  [franime]   200  https://api.franime.fr/api/time
+  [franime]   200  https://filemoon.to/e/hz4jva0ledbg
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/hz4jva0ledbg/embed/details
+  [franime]   200  https://filemoon.to/api/videos/hz4jva0ledbg/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/9bj6/hz4jva0ledbg
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/hz4jva0ledbg/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/hz4jva0ledbg/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/9bj6/hz4jva0ledbg
+  [franime] ✓ [HLS] https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/08/11073/hz4jva0ledbg_x/master.m3u8?t=E6fJLhunQ2R2GGYlQAKUlnVkvC
+  [franime]   200  https://nldproiqqwdnc.com/
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/hz4jva0ledbg/embed/timeslider
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+  [franime] Lecteur choisi : HLS → https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/08/11073/hz4jva0ledbg_x/master.m3u8?t=E6fJLhunQ2R2GGYl
+  [franime] Tentative de téléchargement [HLS] : https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/08/11073/hz4jva0ledbg_x/master.m3u8?t=E6fJLhunQ2R2GGYl...
+[generic] Extracting URL: https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/08/11073/hz4jva0ledbg_x/master.m3u8?t=E6fJLhunQ2R2G...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 1312
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 141
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep15-vo.mp4
+[download]  44.2% of ~ 235.19MiB at    4.16MiB/s ETA 00:31 (frag 63/141)127.0.0.1 - - [31/May/2026 14:06:02] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download] 100% of  233.26MiB in 00:00:52 at 4.46MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep15-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep15-vo.mp4
+127.0.0.1 - - [31/May/2026 14:06:31] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=16&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=16&lang=vo&anime_id=41024
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/15/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=NmUzYjMzNmEzODMzNmEzMjMyNmQzYzNjM2Y2ODM5M2Q2YTNiM2U2OTNkNmQ2ODNhM2Q2ZjZhM2Q2ZDNjM
+  [franime]   200  https://franime.fr/watch2/?a=NmUzYjMzNmEzODMzNmEzMjMyNmQzYzNjM2Y2ODM5M2Q2YTNiM2U2OTNkNmQ2ODNhM2Q2ZjZ
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/6yxg408pd6y3
+  [franime]   200  https://api.franime.fr/api/time
+  [franime]   200  https://filemoon.to/e/6yxg408pd6y3
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/6yxg408pd6y3/embed/details
+  [franime]   200  https://filemoon.to/api/videos/6yxg408pd6y3/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/kwjz/6yxg408pd6y3
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/6yxg408pd6y3/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/6yxg408pd6y3/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/kwjz/6yxg408pd6y3
+  [franime] ✓ [HLS] https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/04/11073/6yxg408pd6y3_x/master.m3u8?t=roZDkVAzONEhjsqImG8G
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/6yxg408pd6y3/embed/timeslider
+  [franime]   200  https://nldproiqqwdnc.com/
+  [franime]   200  https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/04/11073/6yxg408pd6y3_x/master.m3u8?t=roZDkVAzON
+  [franime] ✓ [HLS] https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/04/11073/6yxg408pd6y3_x/index-v1-a1.m3u8?t=roZDkVAzONEhjsq
+  [franime]   200  https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/04/11073/6yxg408pd6y3_x/index-v1-a1.m3u8?t=roZDk
+  [franime] ✓ [HLS] (content-type) https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/04/11073/6yxg408pd6y3_x/seg-1-v1-a1.ts?t=roZDkVA
+  [franime]   200  https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/04/11073/6yxg408pd6y3_x/seg-1-v1-a1.ts?t=roZDkVA
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+  [franime] Lecteur choisi : HLS → https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/04/11073/6yxg408pd6y3_x/master.m3u8?t=roZDkVAzON
+  [franime] Tentative de téléchargement [HLS] : https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/04/11073/6yxg408pd6y3_x/master.m3u8?t=roZDkVAzON...
+[generic] Extracting URL: https://edge1-frankfurt-sprintcdn.owphbf24.com/hls2/04/11073/6yxg408pd6y3_x/master.m3u8?t=roZDkVA...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 1127
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 141
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep16-vo.mp4
+[download]   0.3% of ~ 349.10MiB at    1.52MiB/s ETA Unknown (frag 0/141)127.0.0.1 - - [31/May/2026 14:07:03] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download] 100% of  201.20MiB in 00:00:44 at 4.55MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep16-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep16-vo.mp4
+127.0.0.1 - - [31/May/2026 14:07:47] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=17&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=17&lang=vo&anime_id=41024
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352716114615:1780225
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+127.0.0.1 - - [31/May/2026 14:08:04] "GET /check-ffmpeg HTTP/1.1" 200 -
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/16/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=NjczMjYzMzQzNjY2MzUzNDYzMzUzMzM2M2QzMjYzMzY2NzYzMzczNTYxMzYzNDYzMzMzNjMzMzEzNTMyM
+  [franime]   200  https://franime.fr/watch2/?a=NjczMjYzMzQzNjY2MzUzNDYzMzUzMzM2M2QzMjYzMzY2NzYzMzczNTYxMzYzNDYzMzMzNjM
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/dnpilev7gf92
+  [franime]   200  https://api.franime.fr/api/time
+  [franime]   200  https://filemoon.to/e/dnpilev7gf92
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] Lecteur choisi : FILEMOON → https://filemoon.to/e/dnpilev7gf92
+  [franime] Tentative de téléchargement [FILEMOON] : https://filemoon.to/e/dnpilev7gf92...
+[generic] Extracting URL: https://filemoon.to/e/dnpilev7gf92
+[generic] dnpilev7gf92: Downloading webpage
+[generic] dnpilev7gf92: Extracting information
+ERROR: Unsupported URL: https://filemoon.to/e/dnpilev7gf92
+  [franime] Erreur téléchargement/réparation : ERROR: Unsupported URL: https://filemoon.to/e/dnpilev7gf92
+  [franime] Échec avec FILEMOON (https://filemoon.to/e/dnpilev7gf92) : ERROR: Unsupported URL: https://filemoon.to/e/dnpilev7gf92
+  [franime] Tentative de téléchargement [FILEMOON] : https://filemoon.to/assets/polyfills-BRTT20lB.js...
+[generic] Extracting URL: https://filemoon.to/assets/polyfills-BRTT20lB.js
+[generic] polyfills-BRTT20lB: Downloading webpage
+[info] polyfills-BRTT20lB: Downloading 1 format(s): 0
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep17-vo.unknown_video
+[download] 100% of  114.39KiB in 00:00:00 at 366.84KiB/s
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep17-vo.unknown_video
+  [franime] ⚠ Vidéo corrompue ou illisible (that-time-i-got-reincarnated-as-a-slime-s2-ep17-vo.unknown_video). Tentative de réparation...
+  [franime] ✗ Réparation échouée. Suppression pour retenter.
+  [franime] Erreur téléchargement/réparation : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep17-vo.unknown_video'
+  [franime] Échec avec FILEMOON (https://filemoon.to/assets/polyfills-BRTT20lB.js) : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep17-vo.unknown_video'
+  [franime] Tentative de téléchargement [FILEMOON] : https://filemoon.to/assets/index-Sc2ASKci.js...
+[generic] Extracting URL: https://filemoon.to/assets/index-Sc2ASKci.js
+[generic] index-Sc2ASKci: Downloading webpage
+[info] index-Sc2ASKci: Downloading 1 format(s): 0
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep17-vo.unknown_video
+[download] 100% of    5.16MiB in 00:00:01 at 3.86MiB/s
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep17-vo.unknown_video
+  [franime] ⚠ Vidéo corrompue ou illisible (that-time-i-got-reincarnated-as-a-slime-s2-ep17-vo.unknown_video). Tentative de réparation...
+  [franime] ✗ Réparation échouée. Suppression pour retenter.
+  [franime] Erreur téléchargement/réparation : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep17-vo.unknown_video'
+  [franime] Échec avec FILEMOON (https://filemoon.to/assets/index-Sc2ASKci.js) : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep17-vo.unknown_video'
+  [franime] Tentative de téléchargement [FILEMOON] : https://filemoon.to/assets/index-BXu2PYX2.css...
+[generic] Extracting URL: https://filemoon.to/assets/index-BXu2PYX2.css
+[generic] index-BXu2PYX2: Downloading webpage
+[info] index-BXu2PYX2: Downloading 1 format(s): 0
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep17-vo.unknown_video
+[download] 100% of  388.11KiB in 00:00:00 at 977.25KiB/s
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep17-vo.unknown_video
+  [franime] ⚠ Vidéo corrompue ou illisible (that-time-i-got-reincarnated-as-a-slime-s2-ep17-vo.unknown_video). Tentative de réparation...
+  [franime] ✗ Réparation échouée. Suppression pour retenter.
+  [franime] Erreur téléchargement/réparation : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep17-vo.unknown_video'
+  [franime] Échec avec FILEMOON (https://filemoon.to/assets/index-BXu2PYX2.css) : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep17-vo.unknown_video'
+  [franime] Tentative de téléchargement [WATCH2] : https://franime.fr/watch2/?a=NjczMjYzMzQzNjY2MzUzNDYzMzUzMzM2M2QzMjYzMzY2NzYzMzczNTYxMzYzNDYzMzMzNjM...
+[generic] Extracting URL: https://franime.fr/watch2/?a=NjczMjYzMzQzNjY2MzUzNDYzMzUzMzM2M2QzMjYzMzY2NzYzMzczNTYxMzYzNDYzMzMz...JjZGUxMzBhNzc5NWU%3D
+[generic] ?a=NjczMjYzMzQzNjY2MzUzNDYzMzUzMzM2M2QzMjYzMzY2NzYzMzczNTYxMzYzNDYzMzMzNjMzMzEzNTMyMzU2MzY0MzMzNDY0M2MzNzMzNjEzNzYzMzQzZDY2MzM2MTMxNjc2MDY2NjYzNDMzMzczMTM2NjEzZDY0M2Q2MTNkMzEzYzMyMzI2MDYzMzQzMjY0MzAzNjY3NjQ2NjMzNjMzZDMzMzc2MDY3MzMzNzM1NjA2NzMyMzIzZDM2MzY2MDM2MzQ2MTYwMzE=&b=NmQ3MTcxNzU3NjNmMmEyYTYzNmM2OTYwNjg2YTZhNmIyYjcxNmEyYTYwMmE2MTZiNzU2YzY5NjA3MzMyNjI2MzNjMzc=&c=Njc2MzYzMzY2NzY0NjY2MDMxNjYzNzY3M2Q2MzYxMzc2NzY3MzUzMzYzMzYzZDY0M2M2NDM2MzQzNjMzMzU2MTYwMzYzYzNkNjA2NzMzMzM2NzMxNjE2NzNjNjYzMjMzMzAzMDM1MzY2MDMyMzQ2NDM2M2M2NjNkNjQ2MDY2MzczMDNjMzYzMDM2MzEzNjYxMzEzMTM3MzIzNDM0MzMzNTM0M2MzMDMyNjAzNDMyMzQ=&d=NGQ4NDEyNTdjYjVmNzExOThhYTliYzczOTY5YWU1Njg0ZGIxMWMwNDAzOWM3MjFkMGQ5MDRjYWY3N2ViNmQ=&e=MzIzZDMzMzYzMjMwNjE2MTMxNjYzNTMzMzc2MDY0Njc2MzMxNjE2NDM2M2QzNjY0MzQ2NDMwMzMzNjNkMzE2MTM1MzczZDMwNjczZDM2MzczMjM1MzMzNDY3NjA2MTM0NjQzNDM3NjA2NzM2NjAzMzM1NjYzMTYwNjMzMDY0MzAzZDM2MzY2NDNkM2Q2NzMzNjYzMjNkMzEzZDNkMzc2NDM3MzEzZDM3NjQ2NDMyM2QzZDNjMzIzYzMwNjAzMDM3NjMzNTMwMzEzMzNkNjE2MTMzMzY2NjYxMzQzNDM0MzI=&f=MzQzNDMxMzYzMTM1MzM2MzM3MzAzZDYzMzE2MzY2Njc2NzM0MzEzMTY2MzMzNDY2MzYzNTMyNjEzNzMzNjQ2MDMwMzQ2NDNkMzE2NzYzNjEzNjNkM2M2MTY3MzI2MTMwMzQzMjY0NjM2MzY3NjQzYzYzMzYzMTM3MzIzNjYxMzIzYzM0NjEzYzM3NjQzNzMxMzAzNjNjMzIzMDY0NjQzMTY3NjczMDMwNjE2NzM0M2Q2MDM1MzIzMzMyNjAzNzYxMzU2NjMyMzY2MTYwM2MzZDMwNjM2NjM3NjYzMTYzMzM=&g=MzEzNTNjM2MzNzM2NjYzNjY0MzQzMjY3MzQzNjY0NjczNTM2NjYzMzNjMzQ2NzM0MzYzNDY2MzQ2NjMzMzQzNDY3MzEzYzMzNjEzMTMxMzEzYzY2M2MzYzNjMzM2MTNjMzEzMjYxMzMzYzY0MzMzNTYzNjM2NjYwNjMzZDYzMzA2MDMyMzA2NDNkNjc2MDMw&h=NjAzYzY2MzM2MDM3MzUzZDMxNjMzYzY3Mzc2NDM0NjMzNDMzM2QzMDYzNjQ2NzM3NjYzMDYxM2M2MTMzMzI2MTM0NjY2MzMxMzAzNzNjNjY2MTMxMzczMzY3MzU2NjY3NjEzNzY2MzczNTM0NjMzYzNjM2MzNTM1MzM2NzY3NjczYzYzNjMzZDYxNjA2MDYwM2MzMTYxMzYzNjM2MzAzNDNjNjczMTM2NjYzNDY3MzAzYzNkNjYzYw==&i=MmYwMDY3ZDBiMGZjM2E2NGZmMzVlYjQ3N2ZiYTYzOWQwYjVjODVkMDc2MTY0MWY4MTlmMWU3MDkxY2VmY2MyZGRlY2ExYTVmYzBiMzZhMzMwYzQ4NzMzMQ==&j=YWU2YTA3OWQwNzkxYWJkZDI4NTE2ODQxMzRjNzM1MGNkMThkNTAwZTNhZDAxZjY1MWUyNmVkYjI0MjE5ZjFlOGJjZjU0NmRjMTdlYjRjZjI5ZTcy&k=MzMzYzM3M2Q2NjY0MzIzMDM3MzQzYzNjMzQ2NjNjMzU2NjY3MzMzZDYzNjMzNTYxNjM2NjY3MzMzNTY0NjEzMTMyM2QzMjM0NjA2NjMyMzAzZDM2MzMzMDM1NjQzNDMyNjczMjYzM2QzNjMwMzM2MzM3MzMzNTY2NjEzMjY2M2MzNDM3MzM2NDYxMzQzMzMwMzY2MTYzNjAzNzM0MzA2MDMyNjczMjM3NjAzNzM2M2MzNTMzMzQzMDM1Njc=&l=MzQ2MTYxM2MzYzYzMzczZDMzMzAzNDY2MzEzNTNkNjQ2MzM3M2M2NjYxNjQzZDMwNjczNjNjNjQ2NDMyNjE2MDYwMzQzMTYwMzI2NDMyNjEzMzNkM2QzMzMxMzMzNjM2NjE2MzY3MzYzNDYwNjQzNDM2M2MzYzY0NjQ2NDY0NjQ=&m=YzU5YTE3Y2JhZGExYTQ0ZDA1ODhmODk2ZjEyOTYzOGE2MGMyNTVlYjNlMzBkNmYzM2ZhNzU2MTlmMzliNWU3NDAzMTM1ZWY4MjhkNDdlZWNjNzc3MzUwMTEwMWRlOWY0NjE0ODBlMmI2YzE5MGFjODIyM2ZjY2E=&n=NjE2NDMxNjEzMzM3MzIzYzMyMzQzNzNjMzYzNDNjMzMzMjMwNjQ2NzMwM2M2MzMzMzAzNzNjMzAzNTY0NjE2MzY3MzM2MDMyNjM2NjYwMzA2MTNkMzAzMjY3Njc2NDM2MzQzMjM2MzYzMzYzMzQ2MTNkMzAzNTYxMzE2NzMxNjM2NzM1M2QzNDM3MzAzZDYzMzIzMDMyMzc=&o=NzA3Yjk5Y2RlMGI3MTgwZjA4YWI3OWNiMzdlZDlhZGZkNmIwMDZlMDA2M2Y0MmQ5Mzc4MzQwZTZlMTAwM2Y2NDk4NzEzNGIzZWJjZGUxMzBhNzc5NWU=: Downloading webpage
+ERROR: [generic] Got HTTP Error 403 caused by Cloudflare anti-bot challenge; see  https://github.com/yt-dlp/yt-dlp#impersonation  for how to install the required impersonation dependency, and try again with  --extractor-args "generic:impersonate"
+  [franime] Erreur téléchargement/réparation : ERROR: [generic] Got HTTP Error 403 caused by Cloudflare anti-bot challenge; see  https://github.com/yt-dlp/yt-dlp#impersonation  for how to install the required impersonation dependency, and try again with  --extractor-args "generic:impersonate"
+  [franime] Échec avec WATCH2 (https://franime.fr/watch2/?a=NjczMjYzMzQzNjY2MzUzN) : ERROR: [generic] Got HTTP Error 403 caused by Cloudflare anti-bot challenge; see  https://github.com/yt-dlp/yt-dlp#impersonation  for how to install the required impersonation dependency, and try again with  --extractor-args "generic:impersonate"
+
+  [franime] Forçage du lecteur : HLS
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=17&lang=vo&anime_id=41024
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.1443301390976015:178022
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.1443301390976015:178022
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/16/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=M2EzZjNhM2U2YzZlM2UzYzM5NmU2YzMzMzg2ZjMzM2EzZTZiM2QzYjNlNmU2YzMzM2QzZDZiM2QzZDNiN
+  [franime]   200  https://franime.fr/watch2/?a=M2EzZjNhM2U2YzZlM2UzYzM5NmU2YzMzMzg2ZjMzM2EzZTZiM2QzYjNlNmU2YzMzM2QzZDZ
+  [franime]   200  https://api.franime.fr/api/time
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/dnpilev7gf92
+  [franime]   200  https://filemoon.to/e/dnpilev7gf92
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/dnpilev7gf92/embed/details
+  [franime]   200  https://filemoon.to/api/videos/dnpilev7gf92/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/yrj/dnpilev7gf92
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.169352
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/dnpilev7gf92/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/dnpilev7gf92/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/yrj/dnpilev7gf92
+  [franime] ✓ [HLS] https://edge1-vienna-sprintcdn.owphbf24.com/hls2/10/11073/dnpilev7gf92_x/master.m3u8?t=qaS0D8i--2NcxXPZV15E5Wn
+  [franime]   200  https://nldproiqqwdnc.com/
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/dnpilev7gf92/embed/timeslider
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+  [franime] Lecteur choisi : HLS → https://edge1-vienna-sprintcdn.owphbf24.com/hls2/10/11073/dnpilev7gf92_x/master.m3u8?t=qaS0D8i--2Ncx
+  [franime] Tentative de téléchargement [HLS] : https://edge1-vienna-sprintcdn.owphbf24.com/hls2/10/11073/dnpilev7gf92_x/master.m3u8?t=qaS0D8i--2Ncx...
+[generic] Extracting URL: https://edge1-vienna-sprintcdn.owphbf24.com/hls2/10/11073/dnpilev7gf92_x/master.m3u8?t=qaS0D8i--2...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 1079
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 141
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep17-vo.mp4
+[download]  16.8% of ~ 264.96MiB at    4.46MiB/s ETA 00:56 (frag 23/141)127.0.0.1 - - [31/May/2026 14:09:05] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download] 100% of  192.96MiB in 00:00:47 at 4.10MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep17-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep17-vo.mp4
+127.0.0.1 - - [31/May/2026 14:09:41] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=18&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=18&lang=vo&anime_id=41024
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.1443301390976015:178022
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.1443301390976015:178022
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/17/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=NjM2NDM5MzEzNzMyMzc2NTYzNjQzNDM0MzczOTM1NjA2MzMwMzAzNjM3NjMzNDY1NjAzMzMwMzkzNjM1M
+  [franime]   200  https://franime.fr/watch2/?a=NjM2NDM5MzEzNzMyMzc2NTYzNjQzNDM0MzczOTM1NjA2MzMwMzAzNjM3NjMzNDY1NjAzMzM
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/vj5v0z2g4p8e
+  [franime]   200  https://api.franime.fr/api/time
+  [franime]   200  https://filemoon.to/e/vj5v0z2g4p8e
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/vj5v0z2g4p8e/embed/details
+  [franime]   200  https://filemoon.to/api/videos/vj5v0z2g4p8e/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/rxqz6/vj5v0z2g4p8e
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.144330
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/vj5v0z2g4p8e/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/vj5v0z2g4p8e/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/rxqz6/vj5v0z2g4p8e
+  [franime] ✓ [HLS] https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/06/11073/vj5v0z2g4p8e_x/master.m3u8?t=_UshEOxI3BpxLc4tVyP3ltx
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/vj5v0z2g4p8e/embed/timeslider
+  [franime]   200  https://nldproiqqwdnc.com/
+  [franime]   200  https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/06/11073/vj5v0z2g4p8e_x/master.m3u8?t=_UshEOxI3BpxL
+  [franime] ✓ [HLS] https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/06/11073/vj5v0z2g4p8e_x/index-v1-a1.m3u8?t=_UshEOxI3BpxLc4tVy
+  [franime]   200  https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/06/11073/vj5v0z2g4p8e_x/index-v1-a1.m3u8?t=_UshEOxI
+  [franime] ✓ [HLS] (content-type) https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/06/11073/vj5v0z2g4p8e_x/seg-1-v1-a1.ts?t=_UshEOxI3B
+  [franime]   200  https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/06/11073/vj5v0z2g4p8e_x/seg-1-v1-a1.ts?t=_UshEOxI3B
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+127.0.0.1 - - [31/May/2026 14:10:05] "GET /check-ffmpeg HTTP/1.1" 200 -
+  [franime] Lecteur choisi : HLS → https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/06/11073/vj5v0z2g4p8e_x/master.m3u8?t=_UshEOxI3BpxL
+  [franime] Tentative de téléchargement [HLS] : https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/06/11073/vj5v0z2g4p8e_x/master.m3u8?t=_UshEOxI3BpxL...
+[generic] Extracting URL: https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/06/11073/vj5v0z2g4p8e_x/master.m3u8?t=_UshEOxI3B...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 1453
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 142
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep18-vo.mp4
+[download]  90.2% of ~ 242.61MiB at    3.88MiB/s ETA 00:06 (frag 129/142)127.0.0.1 - - [31/May/2026 14:11:03] "GET /check-ffmpeg HTTP/1.1" 200 -
+127.0.0.1 - - [31/May/2026 14:11:04] "GET /media/franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2/that-time-i-got-reincarnated-as-a-slime-s2-ep17-vo.mp4?t=1780229381343 HTTP/1.1" 206 -
+[download] 100% of  257.73MiB in 00:01:03 at 4.06MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep18-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep18-vo.mp4
+127.0.0.1 - - [31/May/2026 14:11:16] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=19&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=19&lang=vo&anime_id=41024
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.1443301390976015:178022
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.1443301390976015:178022
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/18/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=M2EzODM5M2Y2ZTY5NmE2ZjY4M2Y2YjZiNmQ2YjZiNmQ2ZjM4Njg2ZjNhM2QzODM5M2UzZDNmNmMzZDNmM
+  [franime]   200  https://franime.fr/watch2/?a=M2EzODM5M2Y2ZTY5NmE2ZjY4M2Y2YjZiNmQ2YjZiNmQ2ZjM4Njg2ZjNhM2QzODM5M2UzZDN
+  [franime]   200  https://api.franime.fr/api/time
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/3m7jie8odpt1
+  [franime]   200  https://filemoon.to/e/3m7jie8odpt1
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/3m7jie8odpt1/embed/details
+  [franime]   200  https://filemoon.to/api/videos/3m7jie8odpt1/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/tq1a3/3m7jie8odpt1
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.144330
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/3m7jie8odpt1/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/3m7jie8odpt1/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/tq1a3/3m7jie8odpt1
+  [franime] ✓ [HLS] https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/3m7jie8odpt1_x/master.m3u8?t=ju-TxWxvukIPEyctIHawBrD0xa
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/3m7jie8odpt1/embed/timeslider
+  [franime]   200  https://nldproiqqwdnc.com/
+  [franime]   200  https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/3m7jie8odpt1_x/master.m3u8?t=ju-TxWxvukIPEyct
+  [franime] ✓ [HLS] https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/3m7jie8odpt1_x/index-v1-a1.m3u8?t=ju-TxWxvukIPEyctIHawB
+  [franime]   200  https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/3m7jie8odpt1_x/index-v1-a1.m3u8?t=ju-TxWxvukI
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+127.0.0.1 - - [31/May/2026 14:11:44] "GET /check-ffmpeg HTTP/1.1" 200 -
+  [franime] Lecteur choisi : HLS → https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/3m7jie8odpt1_x/master.m3u8?t=ju-TxWxvukIPEyct
+  [franime] Tentative de téléchargement [HLS] : https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/3m7jie8odpt1_x/master.m3u8?t=ju-TxWxvukIPEyct...
+[generic] Extracting URL: https://edge2-waw-sprintcdn.r66nv9ed.com/hls2/06/11073/3m7jie8odpt1_x/master.m3u8?t=ju-TxWxvukIPE...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 1582
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 142
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep19-vo.mp4
+[download]  75.1% of ~ 273.17MiB at    4.73MiB/s ETA 00:14 (frag 108/142)127.0.0.1 - - [31/May/2026 14:12:45] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download]  95.1% of ~ 272.17MiB at    4.35MiB/s ETA 00:03 (frag 135/142)127.0.0.1 - - [31/May/2026 14:12:56] "GET /media/franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2/that-time-i-got-reincarnated-as-a-slime-s2-ep18-vo.mp4?t=1780229476242 HTTP/1.1" 206 -
+[download] 100% of  279.98MiB in 00:01:14 at 3.73MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep19-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep19-vo.mp4
+127.0.0.1 - - [31/May/2026 14:13:02] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=20&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+127.0.0.1 - - [31/May/2026 14:13:02] "GET /media/franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2/that-time-i-got-reincarnated-as-a-slime-s2-ep19-vo.mp4?t=1780229582964 HTTP/1.1" 206 -
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=20&lang=vo&anime_id=41024
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.1443301390976015:178022
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.1443301390976015:178022
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/19/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=M2M2OTNlM2Q2ZDM5Mzk2ZDNhNmY2ZTNlNjg2ODY4NmUzNDM4M2I2ZjNiM2UzZjNhM2EzNTNmNmYzZjNmN
+  [franime]   200  https://franime.fr/watch2/?a=M2M2OTNlM2Q2ZDM5Mzk2ZDNhNmY2ZTNlNjg2ODY4NmUzNDM4M2I2ZjNiM2UzZjNhM2EzNTN
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/3zqsr69mtuur
+  [franime]   200  https://api.franime.fr/api/time
+  [franime]   200  https://filemoon.to/e/3zqsr69mtuur
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/3zqsr69mtuur/embed/details
+  [franime]   200  https://filemoon.to/api/videos/3zqsr69mtuur/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/37q/3zqsr69mtuur
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.144330
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/3zqsr69mtuur/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/3zqsr69mtuur/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/37q/3zqsr69mtuur
+  [franime] ✓ [HLS] https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/06/11073/3zqsr69mtuur_x/master.m3u8?t=RlJLOhyxP1POx-WyeK_2FxX
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/3zqsr69mtuur/embed/timeslider
+  [franime]   200  https://nldproiqqwdnc.com/
+  [franime]   200  https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/06/11073/3zqsr69mtuur_x/master.m3u8?t=RlJLOhyxP1POx
+  [franime] ✓ [HLS] https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/06/11073/3zqsr69mtuur_x/index-v1-a1.m3u8?t=RlJLOhyxP1POx-WyeK
+  [franime]   200  https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/06/11073/3zqsr69mtuur_x/index-v1-a1.m3u8?t=RlJLOhyx
+  [franime] ✓ [HLS] (content-type) https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/06/11073/3zqsr69mtuur_x/seg-1-v1-a1.ts?t=RlJLOhyxP1
+  [franime]   200  https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/06/11073/3zqsr69mtuur_x/seg-1-v1-a1.ts?t=RlJLOhyxP1
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+  [franime] Lecteur choisi : HLS → https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/06/11073/3zqsr69mtuur_x/master.m3u8?t=RlJLOhyxP1POx
+  [franime] Tentative de téléchargement [HLS] : https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/06/11073/3zqsr69mtuur_x/master.m3u8?t=RlJLOhyxP1POx...
+[generic] Extracting URL: https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/06/11073/3zqsr69mtuur_x/master.m3u8?t=RlJLOhyxP1...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 1267
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 141
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep20-vo.mp4
+[download]  14.3% of ~ 318.90MiB at    4.28MiB/s ETA 01:04 (frag 20/141)127.0.0.1 - - [31/May/2026 14:13:44] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download] 100% of  225.41MiB in 00:00:55 at 4.06MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep20-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep20-vo.mp4
+127.0.0.1 - - [31/May/2026 14:14:29] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=21&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=21&lang=vo&anime_id=41024
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.1443301390976015:178022
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.1443301390976015:178022
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/20/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=NjE2MjY0NjczMDZhNmI2NTMxMzYzMDM2Njc2YjY1NmIzMzYzMzc2NzYyNjczNjM3MzMzNzM0NjA2MzMwN
+  [franime]   200  https://franime.fr/watch2/?a=NjE2MjY0NjczMDZhNmI2NTMxMzYzMDM2Njc2YjY1NmIzMzYzMzc2NzYyNjczNjM3MzMzNzM
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/9gw9n8wveobn
+  [franime]   200  https://api.franime.fr/api/time
+  [franime]   200  https://filemoon.to/e/9gw9n8wveobn
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+127.0.0.1 - - [31/May/2026 14:14:45] "GET /check-ffmpeg HTTP/1.1" 200 -
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/9gw9n8wveobn/embed/details
+  [franime]   200  https://filemoon.to/api/videos/9gw9n8wveobn/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/nm0/9gw9n8wveobn
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.144330
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/9gw9n8wveobn/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/9gw9n8wveobn/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/nm0/9gw9n8wveobn
+  [franime] ✓ [HLS] https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/03/11073/9gw9n8wveobn_x/master.m3u8?t=jFrRWl7-OPDI-QmA9F91EW8
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/9gw9n8wveobn/embed/timeslider
+  [franime]   200  https://nldproiqqwdnc.com/
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+  [franime] Lecteur choisi : HLS → https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/03/11073/9gw9n8wveobn_x/master.m3u8?t=jFrRWl7-OPDI-
+  [franime] Tentative de téléchargement [HLS] : https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/03/11073/9gw9n8wveobn_x/master.m3u8?t=jFrRWl7-OPDI-...
+[generic] Extracting URL: https://edge1-madrid-sprintcdn.r66nv9ed.com/hls2/03/11073/9gw9n8wveobn_x/master.m3u8?t=jFrRWl7-OP...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 1316
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 142
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep21-vo.mp4
+[download]  55.6% of ~ 227.48MiB at    3.96MiB/s ETA 00:25 (frag 80/142)127.0.0.1 - - [31/May/2026 14:15:46] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download] 100% of  234.03MiB in 00:01:10 at 3.32MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep21-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep21-vo.mp4
+127.0.0.1 - - [31/May/2026 14:16:13] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=22&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=22&lang=vo&anime_id=41024
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.1443301390976015:178022
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.1443301390976015:178022
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/21/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=MzYzNjM2NjczMzM2NjA2MTY1NjA2NjYyMzU2NjYyNjAzMTYyM2MzNzM1NjEzNTM1NjIzMDM1MzMzNzM2N
+  [franime]   200  https://franime.fr/watch2/?a=MzYzNjM2NjczMzM2NjA2MTY1NjA2NjYyMzU2NjYyNjAzMTYyM2MzNzM1NjEzNTM1NjIzMDM
+  [franime]   200  https://api.franime.fr/api/time
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/obcoy6vke1n6
+  [franime]   200  https://filemoon.to/e/obcoy6vke1n6
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/obcoy6vke1n6/embed/details
+  [franime]   200  https://filemoon.to/api/videos/obcoy6vke1n6/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/d601b/obcoy6vke1n6
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.144330
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/obcoy6vke1n6/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/obcoy6vke1n6/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/d601b/obcoy6vke1n6
+  [franime]   200  https://nldproiqqwdnc.com/
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+  [franime] Lecteur choisi : FILEMOON → https://filemoon.to/e/obcoy6vke1n6
+  [franime] Tentative de téléchargement [FILEMOON] : https://filemoon.to/e/obcoy6vke1n6...
+[generic] Extracting URL: https://filemoon.to/e/obcoy6vke1n6
+[generic] obcoy6vke1n6: Downloading webpage
+[generic] obcoy6vke1n6: Extracting information
+ERROR: Unsupported URL: https://filemoon.to/e/obcoy6vke1n6
+  [franime] Erreur téléchargement/réparation : ERROR: Unsupported URL: https://filemoon.to/e/obcoy6vke1n6
+  [franime] Échec avec FILEMOON (https://filemoon.to/e/obcoy6vke1n6) : ERROR: Unsupported URL: https://filemoon.to/e/obcoy6vke1n6
+  [franime] Tentative de téléchargement [FILEMOON] : https://filemoon.to/assets/polyfills-BRTT20lB.js...
+[generic] Extracting URL: https://filemoon.to/assets/polyfills-BRTT20lB.js
+[generic] polyfills-BRTT20lB: Downloading webpage
+[info] polyfills-BRTT20lB: Downloading 1 format(s): 0
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video
+[download] 100% of  114.39KiB in 00:00:00 at 376.26KiB/s
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video
+  [franime] ⚠ Vidéo corrompue ou illisible (that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video). Tentative de réparation...
+  [franime] ✗ Réparation échouée. Suppression pour retenter.
+  [franime] Erreur téléchargement/réparation : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video'
+  [franime] Échec avec FILEMOON (https://filemoon.to/assets/polyfills-BRTT20lB.js) : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video'
+  [franime] Tentative de téléchargement [FILEMOON] : https://filemoon.to/assets/index-Sc2ASKci.js...
+[generic] Extracting URL: https://filemoon.to/assets/index-Sc2ASKci.js
+[generic] index-Sc2ASKci: Downloading webpage
+[info] index-Sc2ASKci: Downloading 1 format(s): 0
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video
+[download] 100% of    5.16MiB in 00:00:01 at 3.57MiB/s
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video
+  [franime] ⚠ Vidéo corrompue ou illisible (that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video). Tentative de réparation...
+  [franime] ✗ Réparation échouée. Suppression pour retenter.
+  [franime] Erreur téléchargement/réparation : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video'
+  [franime] Échec avec FILEMOON (https://filemoon.to/assets/index-Sc2ASKci.js) : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video'
+  [franime] Tentative de téléchargement [FILEMOON] : https://filemoon.to/assets/index-BXu2PYX2.css...
+[generic] Extracting URL: https://filemoon.to/assets/index-BXu2PYX2.css
+[generic] index-BXu2PYX2: Downloading webpage
+[info] index-BXu2PYX2: Downloading 1 format(s): 0
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video
+[download] 100% of  388.11KiB in 00:00:00 at 829.68KiB/s
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video
+  [franime] ⚠ Vidéo corrompue ou illisible (that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video). Tentative de réparation...
+  [franime] ✗ Réparation échouée. Suppression pour retenter.
+  [franime] Erreur téléchargement/réparation : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video'
+  [franime] Échec avec FILEMOON (https://filemoon.to/assets/index-BXu2PYX2.css) : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video'
+  [franime] Tentative de téléchargement [FILEMOON] : https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js...
+[generic] Extracting URL: https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+[generic] videoPagesBundle-BqiCBn2I: Downloading webpage
+127.0.0.1 - - [31/May/2026 14:16:47] "GET /check-ffmpeg HTTP/1.1" 200 -
+[info] videoPagesBundle-BqiCBn2I: Downloading 1 format(s): 0
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video
+[download] 100% of  375.86KiB in 00:00:00 at 912.24KiB/s
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video
+  [franime] ⚠ Vidéo corrompue ou illisible (that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video). Tentative de réparation...
+  [franime] ✗ Réparation échouée. Suppression pour retenter.
+  [franime] Erreur téléchargement/réparation : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video'
+  [franime] Échec avec FILEMOON (https://filemoon.to/assets/videoPagesBundle-BqiCBn) : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video'
+  [franime] Tentative de téléchargement [FILEMOON] : https://filemoon.to/assets/index-u46qvMl0.js...
+[generic] Extracting URL: https://filemoon.to/assets/index-u46qvMl0.js
+[generic] index-u46qvMl0: Downloading webpage
+[info] index-u46qvMl0: Downloading 1 format(s): 0
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video
+[download] 100% of   49.24KiB in 00:00:00 at 191.96KiB/s
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video
+  [franime] ⚠ Vidéo corrompue ou illisible (that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video). Tentative de réparation...
+  [franime] ✗ Réparation échouée. Suppression pour retenter.
+  [franime] Erreur téléchargement/réparation : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video'
+  [franime] Échec avec FILEMOON (https://filemoon.to/assets/index-u46qvMl0.js) : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video'
+  [franime] Tentative de téléchargement [FILEMOON] : https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js...
+[generic] Extracting URL: https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+[generic] LegacyLayout-KTLE5AnF: Downloading webpage
+[info] LegacyLayout-KTLE5AnF: Downloading 1 format(s): 0
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video
+[download] 100% of   49.29KiB in 00:00:00 at 199.53KiB/s
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video
+  [franime] ⚠ Vidéo corrompue ou illisible (that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video). Tentative de réparation...
+  [franime] ✗ Réparation échouée. Suppression pour retenter.
+  [franime] Erreur téléchargement/réparation : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video'
+  [franime] Échec avec FILEMOON (https://filemoon.to/assets/LegacyLayout-KTLE5AnF.j) : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video'
+  [franime] Tentative de téléchargement [FILEMOON] : https://filemoon.to/assets/LegacyLayout-4DUARhUK.css...
+[generic] Extracting URL: https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+[generic] LegacyLayout-4DUARhUK: Downloading webpage
+[info] LegacyLayout-4DUARhUK: Downloading 1 format(s): 0
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video
+[download] 100% of   28.56KiB in 00:00:00 at 133.41KiB/s
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video
+  [franime] ⚠ Vidéo corrompue ou illisible (that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video). Tentative de réparation...
+  [franime] ✗ Réparation échouée. Suppression pour retenter.
+  [franime] Erreur téléchargement/réparation : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video'
+  [franime] Échec avec FILEMOON (https://filemoon.to/assets/LegacyLayout-4DUARhUK.c) : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video'
+  [franime] Tentative de téléchargement [FILEMOON] : https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css...
+[generic] Extracting URL: https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+[generic] videoPagesBundle-GjI1uZ-b: Downloading webpage
+[info] videoPagesBundle-GjI1uZ-b: Downloading 1 format(s): 0
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video
+[download] 100% of   28.53KiB in 00:00:00 at 148.45KiB/s
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video
+  [franime] ⚠ Vidéo corrompue ou illisible (that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video). Tentative de réparation...
+  [franime] ✗ Réparation échouée. Suppression pour retenter.
+  [franime] Erreur téléchargement/réparation : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video'
+  [franime] Échec avec FILEMOON (https://filemoon.to/assets/videoPagesBundle-GjI1uZ) : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video'
+  [franime] Tentative de téléchargement [FILEMOON] : https://filemoon.to/api/videos/obcoy6vke1n6/embed/details...
+[generic] Extracting URL: https://filemoon.to/api/videos/obcoy6vke1n6/embed/details
+[generic] details: Downloading webpage
+[info] details: Downloading 1 format(s): 0
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video
+[download] 100% of    287.00B in 00:00:00 at 5.61KiB/s
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video
+  [franime] ⚠ Vidéo corrompue ou illisible (that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video). Tentative de réparation...
+  [franime] ✗ Réparation échouée. Suppression pour retenter.
+  [franime] Erreur téléchargement/réparation : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video'
+  [franime] Échec avec FILEMOON (https://filemoon.to/api/videos/obcoy6vke1n6/embed/) : [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\diego\\Desktop\\Yt-dowload-main\\downloads\\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.unknown_video'
+  [franime] Tentative de téléchargement [WATCH2] : https://franime.fr/watch2/?a=MzYzNjM2NjczMzM2NjA2MTY1NjA2NjYyMzU2NjYyNjAzMTYyM2MzNzM1NjEzNTM1NjIzMDM...
+[generic] Extracting URL: https://franime.fr/watch2/?a=MzYzNjM2NjczMzM2NjA2MTY1NjA2NjYyMzU2NjYyNjAzMTYyM2MzNzM1NjEzNTM1NjIz...NmM2NTczZjg5NzY5Nzll
+[generic] ?a=MzYzNjM2NjczMzM2NjA2MTY1NjA2NjYyMzU2NjYyNjAzMTYyM2MzNzM1NjEzNTM1NjIzMDM1MzMzNzM2NjY2NjNjMzAzNjMzNjE2NzMxM2M2NTY1NjAzNzYxNjYzNjM1NjYzNTY3MzMzYzYyNjAzYzY2NjczYzM0MzQzZDNjMzEzYzYyMzAzMzNjM2Q2MDM2&b=NmM3MDcwNzQ3NzNlMmIyYjYyNmQ2ODYxNjk2YjZiNmEyYTcwNmIyYjYxMmI2YjY2Njc2YjdkMzI3MjZmNjEzNTZhMzI=&c=M2M2MjM0M2M2MjM1NjAzNzNjNjAzNTMzMzc2NzM1NjIzYzYxNjc2NTMwMzAzNjYyMzAzMTMxMzA2MTM3MzIzYzYwNjYzMDYyNjU2NzM0NjEzMTM1Mzc2MTMxNjA2MDNjNjIzMTM0MzUzMzMzMzYzMTYyMzMzMzNkMzAzNjYwMzc2MTNkM2M2MTY3MzQzMjMwMzE2MTY3NjIzNjY3MzIzNTY1Mzc2NjMzMzQ2MA==&d=NzdlN2NjOTRmMGU2MWQwNTlmZTA4YWU2Mzg2OTg1OWFkNDc5YmE2YjU3NDE1Y2VmYjAyMjc3ZTMyNTFjNjVkMzhiMGEzOWI0MzRjMDliMTJjNA==&e=Njc2MTYxNjEzMTMyMzQzNjMwMzAzNTYyNjczNjM2NjEzMjNjMzMzNjYxNjEzMTYxMzE2MjY1NjA2MjYyNjAzMDMwMzQ2MDMwMzczZDNjMzA2NjY2Mzc2MTM2NjI2NjMwNjAzZDM0MzUzNTYyMzA2NjNjNjEzNzMw&f=MzA2NjNkNjE2MTM1MzU2NTM1NjYzNjMxNjA2MDM1Njc2NjYxMzUzNjM2M2Q2MjMyMzczMzM1M2QzNjY3MzUzMDMyMzMzZDYyMzc2NTM1MzQzNTMxM2MzNjNjNjI2MTMwMzY2MDMwNjA2NzMyNjUzNDMzMzYzNzMyMzAzMzY3MzM2MTYwM2MzMDY1MzI2NjYxMzA2MjM3MzUzNDYxMzUzYzMxNjEzMTM0NjE2MTY3M2MzNjM1M2QzNDY1NjI2NjMwMzIzMDNkMzQ=&g=NjI2NTM0M2QzMjNjMzczNzNjNjYzMTYwMzI2MTYwNjczNTY2MzI2NTM1MzM2MDYyMzI2MjM1NjE2MjY1MzIzNjY1MzQzNzYxNjUzMjYwM2M2NTM0MzAzMDNjM2QzNjMwNjIzNjNkM2QzMjNjM2MzMzNjNjYzNDM2Njc2MDY2NjYzMjMyM2M2MDMwM2MzMTMxMzAzMzYwMzUzMjYwNjI2MTMzNjc2NjY1NjEzMTY3M2Q2MTY2MzMzMjMyMzQzMDMzNjAzNzYwMzIzMDY3MzQzMjM3NjczMzMzNjA2NzMwNjczNzMzNjc2Mg==&h=MzM2NTM1MzYzNzYwNjI2NzM1NjA2MjY3NjUzNTNkM2MzZDYyMzY2NTY2NjAzYzYyNjAzZDYxNjczMjY3NjY2NTYwNjAzNjMxMzAzZDYyM2MzMTM2MzYzNDY3M2M2NzYwMzIzMjM2MzM2MDY2NjAzYzMxMzAzMzYyNjEzYzMyMzQzYzYyMzA2NjM3NjYzNzY1MzEzMTMzMzE2MjM2NjIzNDYwNjE2MDYwNjUzMA==&i=MDBkNDczNDZiOTliYTQwNDk1YTJkYWRjMTZiZmFiOWIzMWE4MzRmYjZmNjQ5Nzg4ZWEzOTg0MjUxYmU4OGU1Yjg5MTYwMWFjZTNiZTk1OWEwNzM4NmViMmMxYTRhODkzNTY5Zjk4&j=MTgwNmQyODc2NjQ2OTUxMzNjNmVkZGRhNTQwMDMwYzkzYWRmYTZiMTI4MzI1MmU0M2NiMTdlMzI5ZDA0NjU0ZGJjMmQwNWExYTdjZGE4NDAzMDY3ZWE5MWEyYjBiZA==&k=NjUzNjYyM2Q2NTMyNjYzNjY1M2Q2NTYyM2QzMzNjNjAzMTMxNjUzZDM0MzUzMjNjMzA2NzM1MzAzMjYyNjYzMjM3NjYzNDYwNjE2MjM0MzUzMzY2Mzc2NzYwMzc2MDMwMzUzMjM1M2MzYzM2MzczMTYxM2QzMDMyNjUzNzYyMzQ2MjMzMzIzNzM3NjYzMDYxNjA2NjM0NjI2NzM0NjUzNA==&l=MzE2MDMwMzYzMzY2Njc2MTYwNjA2MTYwNjY2MTM1M2MzNTMxNjUzNjY1NjEzMTY1Njc2NjM3MzQzNjMwMzY2MjYyNjY2NzY1NjUzNDM0NjIzNTMwNjYzNDY1MzQzNzM0MzMzNzMxNjIzNTYwNjYzZDNjM2QzYzY1MzM2NTM0MzAzYzMwNjUzYzM3NjAzMDYxMzI2MTMwMzE=&m=NzA4MmVlY2M4MjZiYjczMWM5YTJlOTg2ZGE2M2QyY2M5NzQzYmFhOTZhYmZjYzU0ODdjYTViYjk4MmFmNTU1OWZjMDU2YjA=&n=MzQzMDM2MzAzZDMyNjUzNjY3M2Q2MTM2MzM2MDY2MzM2NTNkMzA2NTM0MzA2MTM2NjAzYzM0NjczNDYxMzMzNjNkMzI2NzY3MzIzMDYyNjAzNTMzNjY2MjY2MzQzNzM2MzYzNTM3MzIzZDY1MzYzMzYxMzEzYzMzMzQzNTYyNjU2NzYxMzIzNzM1NjAzNzYyNjAzMzNjNjc2NzM1&o=YmNlMGM1YzgyNWE0Njc2ZWNkMmE0MTEwZTRlMzMwM2Q4NWQyYWVjNjJlOGM0MjFiYTJmNWE2YzVhZTFkZmM4MWQyZDdjNGVmZjA4YjM2NjQ0ZmFmYTdiNjQxYzZmNmM2NTczZjg5NzY5Nzll: Downloading webpage
+ERROR: [generic] Got HTTP Error 403 caused by Cloudflare anti-bot challenge; see  https://github.com/yt-dlp/yt-dlp#impersonation  for how to install the required impersonation dependency, and try again with  --extractor-args "generic:impersonate"
+  [franime] Erreur téléchargement/réparation : ERROR: [generic] Got HTTP Error 403 caused by Cloudflare anti-bot challenge; see  https://github.com/yt-dlp/yt-dlp#impersonation  for how to install the required impersonation dependency, and try again with  --extractor-args "generic:impersonate"
+  [franime] Échec avec WATCH2 (https://franime.fr/watch2/?a=MzYzNjM2NjczMzM2NjA2M) : ERROR: [generic] Got HTTP Error 403 caused by Cloudflare anti-bot challenge; see  https://github.com/yt-dlp/yt-dlp#impersonation  for how to install the required impersonation dependency, and try again with  --extractor-args "generic:impersonate"
+
+  [franime] Forçage du lecteur : HLS
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=22&lang=vo&anime_id=41024
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.1443301390976015:178022
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.1443301390976015:178022
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/21/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=MzkzODZmM2YzMzZmM2UzYzMyNmEzZDZlM2IzZDZlNjkzZTM5NmYzODMyNmU2ZDY4M2EzMzY5MzgzZjMyM
+  [franime]   200  https://franime.fr/watch2/?a=MzkzODZmM2YzMzZmM2UzYzMyNmEzZDZlM2IzZDZlNjkzZTM5NmYzODMyNmU2ZDY4M2EzMzY
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/obcoy6vke1n6
+  [franime]   200  https://api.franime.fr/api/time
+  [franime]   200  https://filemoon.to/e/obcoy6vke1n6
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/obcoy6vke1n6/embed/details
+  [franime]   200  https://filemoon.to/api/videos/obcoy6vke1n6/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/6upxp/obcoy6vke1n6
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.144330
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/obcoy6vke1n6/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/obcoy6vke1n6/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/6upxp/obcoy6vke1n6
+  [franime]   200  https://nldproiqqwdnc.com/
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+  [franime] Lecteur choisi : FILEMOON → https://filemoon.to/e/obcoy6vke1n6
+  [franime] Tentative de téléchargement [WATCH2] : https://franime.fr/watch2/?a=MzkzODZmM2YzMzZmM2UzYzMyNmEzZDZlM2IzZDZlNjkzZTM5NmYzODMyNmU2ZDY4M2EzMzY...
+[generic] Extracting URL: https://franime.fr/watch2/?a=MzkzODZmM2YzMzZmM2UzYzMyNmEzZDZlM2IzZDZlNjkzZTM5NmYzODMyNmU2ZDY4M2Ez...Y2RhYWQ0YWE0Yw%3D%3D
+[generic] ?a=MzkzODZmM2YzMzZmM2UzYzMyNmEzZDZlM2IzZDZlNjkzZTM5NmYzODMyNmU2ZDY4M2EzMzY5MzgzZjMyM2Y2OTNiM2UzODZhNmY2OTM4Mzk2YTZkMzI2YTZlNjg2ZDY4MzgzMjY4NmEzZDNkM2QzODMzNmU2ZTY5M2EzYTNhNjkzZjZkNmUzODNhM2MzMzNmMzkzYTMyNjgzMzY4M2M2ODNjM2UzZTZkMzIzMzY4M2YzZjZkMzM2ODNhMzk2ODM5M2QzOTZmM2MzMjNjNmQzMjZlNjkzYjZlNmUzZDNjNjkzYzNjMzkzOQ==&b=NjM3ZjdmN2I3ODMxMjQyNDZkNjI2NzZlNjY2NDY0NjUyNTdmNjQyNDZlMjQ2NDY5Njg2NDcyM2Q3ZDYwNmUzYTY1M2Q=&c=NmE2ZDNlNjgzODZkMzI2ODZmM2YzODNjMzMzZTNkMzkzOTNhNmU2YTZkMzg2ZjNiNmQzMzY4NjkzYjNhMzMzZjNmM2U2ZTZlM2M2ZDNmMzgzOTZhNjg2ODNhNmQzYzNhNmUzYzM5MzkzOTNjNmEzODNjM2YzOTNhMzk2ODNiNjgzODM5Njg2ZjM4M2Q2ZTNjMzIzMzNlM2Q2ZjNmNjkzYzY4Mzg2ZjNhM2M2ODZkM2QzODZlMzMzZjZlM2QzODZlMzgzYQ==&d=NDU0ZGE2MWI3YzY1ZGUzYjRiNjUzZGQzYWIzYmM1NzI2YzA3NDljZDIwNGYyZTcxMzU0NTgwY2I5N2YyYjUzMTgyYTVmYWU5NzI3MTQ2NjgzMWM3OWI1OGRjMDQ=&e=MzkzMzZmNjg2OTY4NmUzMjNhM2YzOTNjM2IzYTM5NmEzODNiM2E2OTNhNmQzOTMyNmE2ZjNjMzgzMjMzNjkzZDNiNjk2ZTZlMzk2ZTNiNmY2OTY5M2YzYzNmM2QzYzNkNmE2ZTNiM2QzYTNiNmYzYzZkMzgzYzNmM2UzZTY4M2U2ODZhM2IzOTZhMzk2ZDZkNjk2ZDNlNjgzZjM4&f=M2MzODMyM2UzZDZhNmQzODY5MzI2OTZlNmYzMzNiM2IzYjNiNmEzODNkM2I2ODZhM2E2ZDNjM2I2ZjZkM2MzODMzM2IzOTZmMzgzZDZlM2QzZDZmM2UzYjZlMzIzOTZmM2Q2ZTY4NjkzOTZkMzI2ZjM4NmU2ZDZlM2QzZjNiM2E2ZDZkNmQzZTMyMzI2ZjZkMzMzYzZkMzkzZDNiNjkzYzNjMzMzODY5&g=NjkzZjMyNjg2ODMyM2EzYTZmM2EzZjZmNmQzZjNjM2IzZTNmMzkzZDY4NmY2OTMzM2E2ZjM4NmYzZTNmM2IzMjNmMzM2YTM4NmQzODZhM2M2ODM5NjgzYzZlM2QzODM4M2MzYjMzM2UzZjZhMzIzYjNiMzkzYTZkM2IzOTNjNmEzYzM5NmQzODNlM2M2ZjNhMzk2ZTNlMzMzMzM5&h=M2EzZjNiNmEzZDZlM2YzYjMyM2YzZTY5MzgzZTZkM2Q2ZjNhMzIzYjZlNmUzMjZmMzgzYjM4NmYzODY5NjkzMjMyMzk2ZTMzNmU2ZTZhMzIzODMyNmEzYzZkM2EzZTM5Mzk2ODY5MzMzMjZlNmYzYzNhM2YzMzY5NmQzZDNjMzM2YTNhNmE2ODNkM2Y2ZTY4M2IzMjNiMzI2OTMzM2QzMjY4NmUzODM5Mzk2ZTNlMzIzMjM4NmU2ZDY4M2M=&i=YWE4ZGFmYmVkZWFkY2QzODRkYThjY2FhNmQxZTdkNDkwNGQyNGIxM2I5YzFlMWVlODVjYjVhZjA0M2U5MjRkZThjZmE5MjQ2NDI3MmVk&j=NWYzZjE1NDYxOTZjNTdlYjBiNDhiODgyYzk4ODA0MzlmZjIwNGM1Yjc0MmFjZDdjOGRjYmQzY2ZkMmJjODY4ZWVhZjkxNjA0ZmRhN2ZhZjg=&k=M2MzOTY5NmQzZTM4M2E2YTZhMzMzODZlNjkzYzNiNjgzMzZkMzMzMjMzNjgzMzZkM2EzODNjM2IzODNiMzMzZDMzMzIzMzNhNmQzYzZhMzkzMjMzNmEzYTZhNmY2OTY4MzI2ZjZlNmY2ZTZkMzk2OTY5M2M2ODNjM2IzZjY4MzgzZTZlNmUzYTMyNjkzOTMzNmEzYTNhMzMzZjNmM2EzYw==&l=M2UzZTMzM2U2ODNkNmEzMjZlMzM2ZjNlNmQzMjNiM2I2ZDNkNjkzZTZmM2I2ZjY4MzIzMzZhM2YzYjM4NmE2YTY5MzI2ZTZkM2I2OTZlMzIzYTZkMzI2ZjNiM2U2OTY4MzIzMjNjM2Q2OTNiM2EzODNmMzkzOTZmMzIzYTNkM2E2ZDNkNmUzZjZmM2I=&m=NTQzNDgwMDE4MzUzNTA4NzY0ZWU4ZTMyMzZjNzkxM2RmYmFiNWNhZTQ0MDQ3MTk5YWJiNjM3NTk3ZTQ1ZmVkOTZkYTU3MjA0ZWYyNmViNDdkNmM3OTQ4NzVmN2I2OWJlOWQ2ZDgyYjFmYzk0YjdjMTZkZA==&n=NmUzODNhMzkzOTNhNjg2ZjNjM2Y2ZTZkM2U2YTM5NmE2YTZhNmEzYzNmMzIzMzNiNmE2ZjZhM2M2OTNmM2I2YTZlM2QzZjNjMzIzYTNkMzI2OTMyMzIzODZkM2MzZTNjMzMzYTZlM2UzYzNkM2MzZDMyMzM2ODZhMzg2ZDZkNmYzZDNhM2Y2ZjY5NmQzOTNhNmYzYzM5Njg2OTY4&o=NDdlMGQ1YTBhOGEyMzQ3N2Q4ZjNhY2ZkYWU2N2Q2YTRmMzcyZTRjYmE3NGYyMDFmNzUwZjIxODE0MTJkYzE5MTRhZWY0OTNmODEyNjBjODBhYTYwOWY0YmY3OWZkMzU2YTZmMjVjY2RhYWQ0YWE0Yw==: Downloading webpage
+ERROR: [generic] Got HTTP Error 403 caused by Cloudflare anti-bot challenge; see  https://github.com/yt-dlp/yt-dlp#impersonation  for how to install the required impersonation dependency, and try again with  --extractor-args "generic:impersonate"
+  [franime] Erreur téléchargement/réparation : ERROR: [generic] Got HTTP Error 403 caused by Cloudflare anti-bot challenge; see  https://github.com/yt-dlp/yt-dlp#impersonation  for how to install the required impersonation dependency, and try again with  --extractor-args "generic:impersonate"
+  [franime] Échec avec WATCH2 (https://franime.fr/watch2/?a=MzkzODZmM2YzMzZmM2UzY) : ERROR: [generic] Got HTTP Error 403 caused by Cloudflare anti-bot challenge; see  https://github.com/yt-dlp/yt-dlp#impersonation  for how to install the required impersonation dependency, and try again with  --extractor-args "generic:impersonate"
+
+  [franime] Forçage du lecteur : SIBNET
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=22&lang=vo&anime_id=41024
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.1443301390976015:178022
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.1443301390976015:178022
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Lecteur sélectionné : SIBNET
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/21/vo/1
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=NjA2ZTY1NjUzNjY3NjQ2MDY2NjEzMjZlMzM2NDY3NjEzMjY0Njc2NzMzNjIzMzYwNmY2NTY1NjUzNTY2N
+  [franime]   200  https://franime.fr/watch2/?a=NjA2ZTY1NjUzNjY3NjQ2MDY2NjEzMjZlMzM2NDY3NjEzMjY0Njc2NzMzNjIzMzYwNmY2NTY
+  [franime]   200  https://api.franime.fr/api/time
+  [franime] ✓ [SIBNET] https://video.sibnet.ru/shell.php?videoid=4395914
+  [franime]   200  https://video.sibnet.ru/shell.php?videoid=4395914
+127.0.0.1 - - [31/May/2026 14:17:48] "GET /check-ffmpeg HTTP/1.1" 200 -
+  [franime]   200  https://video.sibnet.ru/export/playnext_xml.php?videoid=4395914&shell=1&format=json&format=json
+  [franime]   200  https://c.sibnet.ru/sbcount?tc_project=%5B2169%5D&title=%D0%92%D0%B8%D0%B4%D0%B5%D0%BE%20%D1%80%D0%B
+  [franime]   200  https://cvt1.sibnet.ru/sbcount?&pid=2169&title=%D0%92%D0%B8%D0%B4%D0%B5%D0%BE%20%D1%80%D0%BE%D0%BB%D
+  [franime]   200  https://c.sibnet.ru/sbcount?tc_project=%5B3379%5D&title=%D0%92%D0%B8%D0%B4%D0%B5%D0%BE%20%D1%80%D0%B
+  [franime]   200  https://video.sibnet.ru/export/playlist_xml.php?videoid=4395914&k=4d34beb00ac50a4b72a42c0f4654f577&d
+  [franime]   200  https://vst.sibnet.ru/catch?event=load&val=null&videoid=4395914&banner=2&tags=2598,675521&cliptime=1
+  [franime] Lecteur choisi : SIBNET → https://video.sibnet.ru/shell.php?videoid=4395914
+  [franime] Tentative de téléchargement [SIBNET] : https://video.sibnet.ru/shell.php?videoid=4395914...
+[generic] Extracting URL: https://video.sibnet.ru/shell.php?videoid=4395914
+[generic] shell: Downloading webpage
+[generic] shell: Extracting information
+[info] shell: Downloading 1 format(s): 0
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.mp4
+[download] 100% of  204.85MiB in 00:00:42 at 4.80MiB/s
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep22-vo.mp4
+127.0.0.1 - - [31/May/2026 14:18:38] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=23&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=23&lang=vo&anime_id=41024
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.1443301390976015:178022
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.1443301390976015:178022
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+127.0.0.1 - - [31/May/2026 14:18:49] "GET /check-ffmpeg HTTP/1.1" 200 -
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/22/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=NjEzYTM1MzIzYTM2M2IzMTYxNjQ2MDMwNjQ2MDNhNjYzNDY0MzYzNTMyNjMzMjY2NjMzNTNiMzczYjMxN
+  [franime]   200  https://franime.fr/watch2/?a=NjEzYTM1MzIzYTM2M2IzMTYxNjQ2MDMwNjQ2MDNhNjYzNDY0MzYzNTMyNjMzMjY2NjMzNTN
+  [franime]   200  https://api.franime.fr/api/time
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/xakhx195f05x
+  [franime]   200  https://filemoon.to/e/xakhx195f05x
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/xakhx195f05x/embed/details
+  [franime]   200  https://filemoon.to/api/videos/xakhx195f05x/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/7epx/xakhx195f05x
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.144330
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/xakhx195f05x/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/xakhx195f05x/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/7epx/xakhx195f05x
+  [franime] ✓ [HLS] https://edge1-vienna-sprintcdn.owphbf24.com/hls2/04/11073/xakhx195f05x_x/master.m3u8?t=9GVGYwrYGD0Z76ylL8NUYU5
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/xakhx195f05x/embed/timeslider
+  [franime]   200  https://nldproiqqwdnc.com/
+  [franime]   200  https://edge1-vienna-sprintcdn.owphbf24.com/hls2/04/11073/xakhx195f05x_x/master.m3u8?t=9GVGYwrYGD0Z7
+  [franime] ✓ [HLS] https://edge1-vienna-sprintcdn.owphbf24.com/hls2/04/11073/xakhx195f05x_x/index-v1-a1.m3u8?t=9GVGYwrYGD0Z76ylL8
+  [franime]   200  https://edge1-vienna-sprintcdn.owphbf24.com/hls2/04/11073/xakhx195f05x_x/index-v1-a1.m3u8?t=9GVGYwrY
+  [franime] ✓ [HLS] (content-type) https://edge1-vienna-sprintcdn.owphbf24.com/hls2/04/11073/xakhx195f05x_x/seg-1-v1-a1.ts?t=9GVGYwrYGD
+  [franime]   200  https://edge1-vienna-sprintcdn.owphbf24.com/hls2/04/11073/xakhx195f05x_x/seg-1-v1-a1.ts?t=9GVGYwrYGD
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+  [franime] Lecteur choisi : HLS → https://edge1-vienna-sprintcdn.owphbf24.com/hls2/04/11073/xakhx195f05x_x/master.m3u8?t=9GVGYwrYGD0Z7
+  [franime] Tentative de téléchargement [HLS] : https://edge1-vienna-sprintcdn.owphbf24.com/hls2/04/11073/xakhx195f05x_x/master.m3u8?t=9GVGYwrYGD0Z7...
+[generic] Extracting URL: https://edge1-vienna-sprintcdn.owphbf24.com/hls2/04/11073/xakhx195f05x_x/master.m3u8?t=9GVGYwrYGD...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 1515
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 140
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep23-vo.mp4
+[download]  62.8% of ~ 239.77MiB at    4.68MiB/s ETA 00:19 (frag 90/140)127.0.0.1 - - [31/May/2026 14:19:50] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download] 100% of  268.35MiB in 00:01:06 at 4.02MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep23-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep23-vo.mp4
+127.0.0.1 - - [31/May/2026 14:20:16] "POST /download HTTP/1.1" 200 -
+
+  [franime] Analyse de la page : https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=24&lang=vo&anime_id=41024
+  [franime] Chrome : C:\Users\diego\AppData\Local\Google\Chrome\Application\chrome.exe
+  [franime]   200  https://franime.fr/anime/that-time-i-got-reincarnated-as-a-slime?s=2&ep=24&lang=vo&anime_id=41024
+  [franime] Challenge Cloudflare détecté, attente de résolution (jusqu'à 25s)...
+  [franime]   200  https://franime.fr/site.webmanifest
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.1443301390976015:178022
+  [franime]   200  https://franime.fr/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.1443301390976015:178022
+  [franime]   200  https://franime.fr/adstagscripts/n
+  [franime]   200  https://franime.fr/recherche?_rsc=wf0bx
+  [franime]   200  https://franime.fr/calendrier?_rsc=wf0bx
+  [franime]   200  https://franime.fr/annonces?_rsc=wf0bx
+  [franime]   200  https://franime.fr/?_rsc=wf0bx
+  [franime]   200  https://franime.fr/login?_rsc=wf0bx
+  [franime]   200  https://api.franime.fr/api/animes
+  [franime]   401  https://api.franime.fr/api/auth
+  [franime]   200  https://api.franime.fr/api/announcements
+  [franime] ✓ Challenge Cloudflare passé !
+  [franime] Clic 'Regarder' : button:has-text('Regarder')
+  [franime]   200  https://api.franime.fr/api/anime/41024/1/23/vo/0
+  [franime] ✓ [WATCH2] https://franime.fr/watch2/?a=NmQ2YTY4NmUzYjY0NjkzZjNiNmU2ZjNlNmE2ODNlNjk2YzY5NmQzZTY0NjUzYzM5NmYzOTZlM2MzOTZkM
+  [franime]   200  https://franime.fr/watch2/?a=NmQ2YTY4NmUzYjY0NjkzZjNiNmU2ZjNlNmE2ODNlNjk2YzY5NmQzZTY0NjUzYzM5NmYzOTZ
+  [franime]   200  https://api.franime.fr/api/time
+  [franime] ✓ [FILEMOON] https://filemoon.to/e/htkv90i9br4f
+  [franime]   200  https://filemoon.to/e/htkv90i9br4f
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/polyfills-BRTT20lB.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-Sc2ASKci.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-BXu2PYX2.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-BqiCBn2I.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/index-u46qvMl0.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-KTLE5AnF.js
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/LegacyLayout-4DUARhUK.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/assets/videoPagesBundle-GjI1uZ-b.css
+  [franime] ✓ [FILEMOON] https://filemoon.to/api/videos/htkv90i9br4f/embed/details
+  [franime]   200  https://filemoon.to/api/videos/htkv90i9br4f/embed/details
+  [franime]   200  https://rupertisdivingintoocean.com/z39/htkv90i9br4f
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/htkv90i9br4f/embed/settings
+  [franime]   200  https://rupertisdivingintoocean.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/8fc8ed1d8752/0.144330
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/challenge
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/access/attest
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/htkv90i9br4f/embed/playback
+  [franime]   200  https://rupertisdivingintoocean.com/z39/htkv90i9br4f
+  [franime] ✓ [HLS] https://be7713.rcr82.waw05.r66nv9ed.com/hls2/03/11073/htkv90i9br4f_x/master.m3u8?t=l11uISgnXAWQHwQlW7JsblwYBvx
+  [franime]   200  https://rupertisdivingintoocean.com/api/videos/htkv90i9br4f/embed/timeslider
+  [franime]   200  https://nldproiqqwdnc.com/
+  [franime]   200  https://be7713.rcr82.waw05.r66nv9ed.com/hls2/03/11073/htkv90i9br4f_x/master.m3u8?t=l11uISgnXAWQHwQlW
+  [franime] ✓ [HLS] https://be7713.rcr82.waw05.r66nv9ed.com/hls2/03/11073/htkv90i9br4f_x/index-v1-a1.m3u8?t=l11uISgnXAWQHwQlW7Jsbl
+  [franime]   200  https://rupertisdivingintoocean.com/blocked.html
+  [franime]   401  https://rupertisdivingintoocean.com/api/dashboard
+  [franime] Lecteur choisi : HLS → https://be7713.rcr82.waw05.r66nv9ed.com/hls2/03/11073/htkv90i9br4f_x/master.m3u8?t=l11uISgnXAWQHwQlW
+  [franime] Tentative de téléchargement [HLS] : https://be7713.rcr82.waw05.r66nv9ed.com/hls2/03/11073/htkv90i9br4f_x/master.m3u8?t=l11uISgnXAWQHwQlW...
+[generic] Extracting URL: https://be7713.rcr82.waw05.r66nv9ed.com/hls2/03/11073/htkv90i9br4f_x/master.m3u8?t=l11uISgnXAWQHw...sn=12322&sp=5500&p=0
+[generic] master: Downloading webpage
+[generic] master: Downloading m3u8 information
+[generic] master: Checking m3u8 live status
+[info] master: Downloading 1 format(s): 1855
+[hlsnative] Downloading m3u8 manifest
+[hlsnative] Total fragments: 142
+[download] Destination: C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep24-vo.mp4
+[download]   3.7% of ~ 434.03MiB at    4.50MiB/s ETA 01:32 (frag 5/142)127.0.0.1 - - [31/May/2026 14:20:51] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download]  93.2% of ~ 306.23MiB at    5.30MiB/s ETA 00:04 (frag 133/142)127.0.0.1 - - [31/May/2026 14:21:52] "GET /check-ffmpeg HTTP/1.1" 200 -
+[download] 100% of  327.31MiB in 00:01:12 at 4.50MiB/s
+[FixupM3u8] Fixing MPEG-TS in MP4 container of "C:\Users\diego\Desktop\Yt-dowload-main\downloads\franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2\that-time-i-got-reincarnated-as-a-slime-s2-ep24-vo.mp4"
+  [franime] Vérification de l'intégrité : that-time-i-got-reincarnated-as-a-slime-s2-ep24-vo.mp4
+127.0.0.1 - - [31/May/2026 14:22:00] "POST /download HTTP/1.1" 200 -
+127.0.0.1 - - [31/May/2026 14:22:47] "GET /media/franime-fr-that-time-i-got-reincarnated-as-a-slime-id-41024-s-2/that-time-i-got-reincarnated-as-a-slime-s2-ep24-vo.mp4?t=1780230120980 HTTP/1.1" 206 -
+127.0.0.1 - - [31/May/2026 14:22:47] "GET /check-ffmpeg HTTP/1.1" 200 -
+127.0.0.1 - - [31/May/2026 14:23:43] "GET /check-ffmpeg HTTP/1.1" 200 -

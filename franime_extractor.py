@@ -404,6 +404,7 @@ def download_franime(url: str, output_path: str = "downloads",
 def _download_stream(stream_url: str, lecteur_name: str, page_url: str,
                      output_path: str, download_type: str, quality: str) -> dict[str, Any]:
     import yt_dlp
+    import subprocess
 
     is_sibnet  = "sibnet.ru"   in stream_url
     is_filemoon= "filemoon"    in stream_url
@@ -419,7 +420,11 @@ def _download_stream(stream_url: str, lecteur_name: str, page_url: str,
     ep     = f"s{params.get('s','1')}-ep{params.get('ep','1')}-{params.get('lang','vo')}"
 
     ffmpeg_dir = _resolve_ffmpeg_dir()
-    has_ffmpeg = bool(ffmpeg_dir) or (bool(shutil.which("ffmpeg")) and bool(shutil.which("ffprobe")))
+    ffmpeg_exe = "ffmpeg"
+    ffprobe_exe = "ffprobe"
+    if ffmpeg_dir:
+        ffmpeg_exe = os.path.join(ffmpeg_dir, "ffmpeg.exe")
+        ffprobe_exe = os.path.join(ffmpeg_dir, "ffprobe.exe")
 
     ydl_opts: dict[str, Any] = {
         "format": "bestvideo+bestaudio/best" if download_type != "audio" else "bestaudio/best",
@@ -427,50 +432,69 @@ def _download_stream(stream_url: str, lecteur_name: str, page_url: str,
         "quiet": False,
         "no_warnings": True,
         "noplaylist": True,
-        # ── Vitesse ──────────────────────────────────────────────────────────
-        "concurrent_fragment_downloads": 16,   # 16 fragments en parallèle
-        "retries": 10,
-        "fragment_retries": 10,
-        "file_access_retries": 5,
-        "http_chunk_size": 10 * 1024 * 1024,   # chunks de 10 MB
-        "socket_timeout": 30,
-        "hls_use_mpegts": True,                # Recommandé par yt-dlp pour HLS
+        "merge_output_format": "mp4",
         "http_headers": {
             "Referer":    referer,
             "Origin":     referer.rstrip("/"),
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         },
     }
 
-    # aria2c = téléchargeur externe beaucoup plus rapide (16 connexions simultanées)
-    if shutil.which("aria2c"):
-        ydl_opts["external_downloader"] = "aria2c"
-        ydl_opts["external_downloader_args"] = [
-            "--max-connection-per-server=16", "--split=16",
-            "--min-split-size=1M", "--continue=true",
-        ]
-        print("  [franime] aria2c détecté → téléchargement accéléré")
-    if ffmpeg_dir: ydl_opts["ffmpeg_location"] = ffmpeg_dir
-    if has_ffmpeg and download_type != "audio": ydl_opts["merge_output_format"] = "mp4"
+    if ffmpeg_dir:
+        ydl_opts["ffmpeg_location"] = ffmpeg_dir
 
-    # Snapshot mtime avant téléchargement pour détecter nouveaux fichiers ET modifiés
-    before_mtime: dict[str, float] = {
-        f: os.path.getmtime(os.path.join(output_path, f))
-        for f in os.listdir(output_path)
-    }
-
+    # Tentative de téléchargement
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-        info = ydl.extract_info(stream_url, download=True)
+        try:
+            info = ydl.extract_info(stream_url, download=True)
+            filepath = _resolve_downloaded_file(info, output_path, {})
+            
+            if filepath and os.path.isfile(filepath):
+                # --- AUTO-RÉPARATION ---
+                print(f"  [franime] Vérification de l'intégrité : {os.path.basename(filepath)}")
+                
+                # 1. Vérifier si c'est une vraie vidéo lisible
+                probe_cmd = [ffprobe_exe, "-v", "error", "-show_entries", "format=duration", "-of", "default=noprint_wrappers=1:nokey=1", filepath]
+                probe_res = subprocess.run(probe_cmd, capture_output=True, text=True)
+                
+                is_valid = False
+                try:
+                    duration = float(probe_res.stdout.strip())
+                    if duration > 10: # On considère que c'est valide si > 10s
+                        is_valid = True
+                except:
+                    pass
 
-    selected = _resolve_downloaded_file(info, output_path, before_mtime)
+                if not is_valid:
+                    print(f"  [franime] ⚠ Vidéo corrompue ou illisible ({os.path.basename(filepath)}). Tentative de réparation...")
+                    fixed_path = filepath.replace(".mp4", "_fixed.mp4")
+                    # Tentative de remuxage pour réparer le container
+                    fix_cmd = [ffmpeg_exe, "-y", "-i", filepath, "-c", "copy", "-map", "0:v", "-map", "0:a?", fixed_path]
+                    fix_res = subprocess.run(fix_cmd, capture_output=True)
+                    
+                    if fix_res.returncode == 0 and os.path.exists(fixed_path) and os.path.getsize(fixed_path) > 1000000:
+                        os.remove(filepath)
+                        os.rename(fixed_path, filepath)
+                        print(f"  [franime] ✓ Réparation réussie.")
+                    else:
+                        if os.path.exists(fixed_path): os.remove(fixed_path)
+                        print(f"  [franime] ✗ Réparation échouée. Suppression pour retenter.")
+                        os.remove(filepath)
+                        raise Exception("Vidéo corrompue et non réparable.")
 
-    return {
-        "title":      f"{title}-{ep}",
-        "filepath":   selected,
-        "filename":   os.path.basename(selected) if selected else None,
-        "stream_url": stream_url,
-        "lecteur":    lecteur_name,
-    }
+                return {
+                    "success": True,
+                    "filename": os.path.basename(filepath),
+                    "filepath": filepath,
+                    "folder": os.path.basename(output_path)
+                }
+        except Exception as e:
+            print(f"  [franime] Erreur téléchargement/réparation : {e}")
+            if 'filepath' in locals() and filepath and os.path.exists(filepath):
+                os.remove(filepath)
+            raise e
+
+    return {"success": False, "error": "Échec final"}
 
 
 def _find_chrome() -> str | None:
